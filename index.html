@@ -57,6 +57,23 @@
             position: relative;
             display: inline-block;
             padding-bottom: 8px;
+            font-size: 1.25rem; /* Much smaller for mobile */
+            white-space: nowrap; /* Prevent wrapping */
+        }
+        @media (min-width: 640px) {
+            .section-title {
+                font-size: 1.4rem; /* sm breakpoint */
+            }
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 1.6rem; /* md breakpoint */
+            }
+        }
+        @media (min-width: 1024px) {
+            .section-title {
+                font-size: 1.8rem; /* lg breakpoint */
+            }
         }
         .section-title::after {
             content: '';
@@ -64,11 +81,126 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 70px;
+            width: 50px; /* Smaller width for mobile */
             height: 3px;
             background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
             border-radius: 2px;
             box-shadow: 0 0 8px var(--glow-color);
+        }
+        @media (min-width: 640px) {
+            .section-title::after {
+                width: 70px; /* Larger width for desktop */
+            }
+        }
+
+        /* Update heading styles */
+        h1 {
+            font-size: 1.4rem; /* Much smaller for mobile */
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 1.25rem; /* Much smaller for mobile */
+            line-height: 1.3;
+        }
+        h3 {
+            font-size: 1rem; /* Much smaller for mobile */
+            line-height: 1.4;
+        }
+        h4 {
+            font-size: 0.9rem; /* Much smaller for mobile */
+            line-height: 1.4;
+        }
+        h5 {
+            font-size: 0.85rem; /* Much smaller for mobile */
+            line-height: 1.4;
+        }
+
+        @media (min-width: 640px) {
+            h1 {
+                font-size: 1.6rem; /* sm breakpoint */
+            }
+            h2 {
+                font-size: 1.4rem; /* sm breakpoint */
+            }
+            h3 {
+                font-size: 1.1rem; /* sm breakpoint */
+            }
+            h4 {
+                font-size: 1rem; /* sm breakpoint */
+            }
+            h5 {
+                font-size: 0.9rem; /* sm breakpoint */
+            }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 1.8rem; /* md breakpoint */
+            }
+            h2 {
+                font-size: 1.6rem; /* md breakpoint */
+            }
+            h3 {
+                font-size: 1.25rem; /* md breakpoint */
+            }
+            h4 {
+                font-size: 1.1rem; /* md breakpoint */
+            }
+            h5 {
+                font-size: 1rem; /* md breakpoint */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 2rem; /* lg breakpoint */
+            }
+            h2 {
+                font-size: 1.8rem; /* lg breakpoint */
+            }
+            h3 {
+                font-size: 1.4rem; /* lg breakpoint */
+            }
+            h4 {
+                font-size: 1.2rem; /* lg breakpoint */
+            }
+            h5 {
+                font-size: 1.1rem; /* lg breakpoint */
+            }
+        }
+
+        /* Update section spacing for mobile */
+        section {
+            padding: 3rem 0; /* Base padding for mobile */
+        }
+        @media (min-width: 768px) {
+            section {
+                padding: 5rem 0; /* Larger padding for desktop */
+            }
+        }
+
+        /* Update container padding for mobile */
+        .container {
+            padding-left: 0.75rem; /* Smaller padding for mobile */
+            padding-right: 0.75rem;
+        }
+        @media (min-width: 640px) {
+            .container {
+                padding-left: 1rem; /* sm breakpoint */
+                padding-right: 1rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                padding-left: 1.5rem; /* md breakpoint */
+                padding-right: 1.5rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                padding-left: 2rem; /* lg breakpoint */
+                padding-right: 2rem;
+            }
         }
 
         ::-webkit-scrollbar { width: 8px; }
@@ -473,6 +605,68 @@
             }
         }
 
+        /* Timeline panel title size fix for mobile */
+        .timeline-title {
+            font-size: 0.95rem !important;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.15rem;
+        }
+        @media (min-width: 640px) {
+            .timeline-title {
+                font-size: 1.05rem !important;
+            }
+        }
+        @media (min-width: 1024px) {
+            .timeline-title {
+                font-size: 1.15rem !important;
+            }
+        }
+
+        /* Smaller skill category title for mobile */
+        .skill-category-title-mini {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            color: var(--accent-primary);
+            margin-bottom: 0.5rem;
+        }
+        @media (min-width: 640px) {
+            .skill-category-title-mini { font-size: 0.85rem !important; }
+        }
+        @media (min-width: 1024px) {
+            .skill-category-title-mini { font-size: 0.95rem !important; }
+        }
+        /* Smaller project card title for mobile */
+        .project-title-mini {
+            font-size: 1.05rem !important;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+        @media (min-width: 640px) {
+            .project-title-mini { font-size: 1.10rem !important; }
+        }
+        @media (min-width: 1024px) {
+            .project-title-mini { font-size: 1.20rem !important; }
+        }
+
+        .leading-relaxed {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.1rem;
+            }
+            @media (min-width: 640px) {
+            .leading-relaxed {
+                font-size: 1.05rem;
+                line-height: 1.7;
+            }
+            }
+            @media (min-width: 1024px) {
+            .leading-relaxed {
+                font-size: 1.15rem;
+                line-height: 1.75;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -546,7 +740,7 @@
                 <div class="text-center mb-16">
                     <h2 class="section-title text-4xl font-bold">About Me</h2>
                 </div>
-                <div class="max-w-3xl mx-auto text-lg text-center text-gray-300 space-y-6">
+                <div class="max-w-3xl mx-auto text-left text-gray-300 space-y-6">
                     <p class="leading-relaxed">
                         Hello! I'm Ronald Kanyepi, a passionate data enthusiast and business analytics professional dedicated to turning complex data into actionable insights. With a background in banking and advanced training through my Master's in Business Analytics, I specialize in bridging the gap between raw data and strategic decision-making.
                     </p>
@@ -554,7 +748,7 @@
                      I thrive on solving challenging problems using data engineering, predictive modeling, and storytelling with data. Whether it's building scalable data pipelines, forecasting trends, or crafting dashboards, I bring curiosity and precision to every project.
                     </p>
                     <p class="leading-relaxed">
-                       Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and techniques to sharpen my skills. When I'm not diving into datasets, you can find me following the latest in soccer or exploring new technologies.Welcome to my corner of the web — feel free to explore my projects, connect, or say hello!
+                       Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and techniques to sharpen my skills. When I'm not diving into datasets, you can find me following the latest in soccer or exploring new technologies.Welcome to my corner of the web! feel free to explore my projects, connect, or say hello!
                     </p>
                 </div>
             </div>
@@ -570,15 +764,15 @@
                         <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
                         <div class="timeline-item-panel panel p-6">
                             <div class="education-item-header">
-                                <h3 class="text-xl font-bold text-white">Data Scientist</h3>
+                                <h3 class="timeline-title">Data Scientist</h3>
                                 <span class="text-sm text-gray-400">Dec 2024 - Present</span>
                             </div>
                             <p class="text-md text-sky-400 mb-2">Pennybacker Capital, Austin, Texas</p>
                             <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                                <li class="mb-2">Designed and deployed machine learning models to forecast quarterly Gross Asset Value (GAV) for a $4B+ real estate portfolio across multifamily and commercial asset classes, achieving 1% MAPE for short-term forecasts.</li>
-                                <li class="mb-2">Integrated 50+ internal/external datasets and applied NLP on Google Reviews to flag operational risks.</li>
-                                <li class="mb-2">Deployed scalable models via MLflow; tuned with Optuna and explained outputs using SHAP & LIME values.</li>
-                                <li class="mb-2">Helped stakeholders make data-informed acquisition and disposition decisions by providing transparent, forward-looking valuation forecasts and operational insights.</li>
+                                    <li>Built ML models forecasting quarterly GAV for a $4B+ real estate portfolio with 1% MAPE.</li>
+                                    <li>Combined 50+ datasets; used NLP on Google Reviews to detect operational risks.</li>
+                                    <li>Deployed scalable models via MLflow; tuned with Optuna, explained with SHAP/LIME.</li>
+                                    <li>Delivered valuation forecasts to guide data-driven acquisition and disposition decisions.</li>
                             </ul>
                         </div>
                     </div>
@@ -586,15 +780,15 @@
                         <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
                         <div class="timeline-item-panel panel p-6">
                             <div class="education-item-header">
-                                <h3 class="text-xl font-bold text-white">Cards and Merchant Services Manager</h3>
+                                <h3 class="timeline-title">Cards and Merchant Services Manager</h3>
                                 <span class="text-sm text-gray-400">Mar 2024 - Jun 2024</span>
                             </div>
                             <p class="text-md text-sky-400 mb-2">AFC Commercial Bank, Harare, Zimbabwe</p>
                             <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                                 <li>Supervised a cross-functional team of 20 on the VISA prepaid card project for AFC Bank, developing platinum and classic cards thereby enhancing revenue from retail operations by over 60%.</li>
-                                <li>Led the partnership between OK-Supermarket and AFC Bank for the OK Grand Challenge promotion, driving data-driven marketing strategies; effort generated a 200% increase in POS transactions across 70+ outlets.</li>
-                                <li>Developed a data visualization dashboard using Python, Apache Spark and Dash Plotly to analyze 20000+ ATM and POS terminal activity, providing critical insights and facilitating in-depth analysis and swift resolution of operational issues.</li>
-                                <li>Implemented an XGBoost model to predict point-of-sale client churn, enhancing targeted retention campaign effectiveness by 25% and reducing churn rates by 15% within two months.</li>
+                                <li>Led a 20-member team on AFC Bank’s VISA card launch, boosting retail revenue by 60%.</li>
+                                <li>Drove a 200% POS transaction surge via a strategic OK-Supermarket partnership and promotion.</li>
+                                <li>Built a Python–Spark–Dash dashboard analyzing 20K+ ATM/POS terminals for operational insights.</li>
+                                <li>Implemented an XGBoost model to reduce POS client churn by 15% and improve retention by 25%.</li>
                             </ul>
                         </div>
                     </div>
@@ -612,7 +806,7 @@
                         <div class="timeline-icon"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
                         <div class="timeline-item-panel panel p-6">
                             <div class="education-item-header">
-                                <h3 class="text-xl font-bold text-white">MSc. in Business Analytics (MSBA)</h3>
+                                <h3 class="timeline-title">MSc. in Business Analytics (MSBA)</h3>
                                 <span class="text-sm text-gray-400">Aug 2024 - May 2025</span>
                             </div>
                             <p class="text-md text-sky-400 mb-2">Emory University – Goizueta Business School</p>
@@ -623,7 +817,7 @@
                         <div class="timeline-icon"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
                         <div class="timeline-item-panel panel p-6">
                            <div class="education-item-header">
-                                <h3 class="text-xl font-bold text-white">BSc. in Business Studies and Computing Science</h3>
+                                <h3 class="timeline-title">BSc. in Business Studies & Computing Science</h3>
                                 <span class="text-sm text-gray-400">Feb 2017 - May 2021</span>
                             </div>
                             <p class="text-md text-sky-400">University of Zimbabwe</p>
@@ -830,7 +1024,7 @@
                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-engineering">
                         <img src="media/kafka_flow.gif" alt="Log Analysis" class="w-full h-56 ">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-1 text-white">Log-Realtime-Analysis Project</h3>
+                            <h3 class="project-title-mini">Log-Realtime-Analysis Project</h3>
                             <p class="text-gray-400 mb-3 text-sm leading-relaxed">
                                 A scalable architecture for real-time log processing and visualization handling 60,000 events/second. Built with a Kafka-Spark ETL pipeline, DynamoDB for storing aggregate real-time metrics, and Python Dash for interactive dashboards.
                             </p>
@@ -852,7 +1046,7 @@
                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
                           <img src="media/recon.png" alt="Reconciliation System" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-1 text-white">Reconciliation System Development</h3>
+                            <h3 class="project-title-mini">Reconciliation System Development</h3>
                             <p class="text-gray-400 mb-3 text-sm leading-relaxed">
                                 Modernized monolithic reconciliation app into microservices using Docker and Kubernetes at AFC Commercial Bank. Code access restricted due to bank's security policies.
                             </p>
@@ -872,7 +1066,7 @@
                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
                         <img src="media/churn.jpeg" alt="Customer Churn Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-1 text-white">Customer Churn Analysis</h3>
+                            <h3 class="project-title-mini">Customer Churn Analysis</h3>
                             <p class="text-gray-400 mb-3 text-sm leading-relaxed">
                                 Built an end-to-end churn prediction pipeline using statistical and machine learning models to help a telecom company identify at-risk customers and reduce churn. Included EDA, feature engineering, model evaluation, and explainability.
                             </p>
@@ -892,7 +1086,7 @@
                 <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
                     <img src="media/ai-json.png" alt="OCR to JSON" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-1 text-white">Document-to-JSON AI Extractor</h3>
+                        <h3 class="project-title-mini">Document-to-JSON AI Extractor</h3>
                         <p class="text-gray-400 mb-3 text-sm leading-relaxed">
                             Use the OpenGVLab internvl3-14b model to extract text from scanned documents and images (e.g., licenses, passports, national IDs,receipts) with OCR capabilities and convert the results into structured JSON. Supports PDF and image uploads, powered by Gradio.
                         </p>
@@ -921,7 +1115,7 @@
                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-viz">
                         <img src="media/southern-africa-health.png" alt="Southern-Africa-Health-Indicators-Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-1 text-white">Southern Africa Health Indicators Analysis</h3>
+                            <h3 class="project-title-mini">Southern Africa Health Indicators Analysis</h3>
                             <p class="text-gray-400 mb-3 text-sm leading-relaxed">
                                 Visualizing Health Trends in Southern Africa: Analyzing World Bank data (2013–2020) to uncover patterns in life expectancy, infant mortality, HIV prevalence, and maternal mortality.
                             </p>
@@ -1380,3 +1574,4 @@
     </script>
 </body>
 </html>
+
