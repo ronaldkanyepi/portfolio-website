@@ -442,6 +442,37 @@
             }
         }
 
+        .skills-container {
+            overflow: hidden;
+            padding: 0 2rem;
+            position: relative;
+            touch-action: pan-y pinch-zoom;
+            margin: 0 -1rem; /* Negative margin to compensate for container padding */
+        }
+        #skillsTrack {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            padding: 0 1rem; /* Add padding to ensure last slide is visible */
+        }
+        .skill-slide {
+            flex: 0 0 auto;
+            transition: opacity 0.3s ease;
+            width: calc(100% - 2rem); /* Adjust width to account for padding */
+        }
+        @media (min-width: 640px) {
+            .skill-slide {
+                width: calc(50% - 2rem); /* For 2 slides on tablet */
+            }
+        }
+        @media (min-width: 1024px) {
+            .skill-slide {
+                width: calc(33.333% - 2rem); /* For 3 slides on desktop */
+            }
+        }
+
     </style>
 </head>
 <body class="antialiased">
@@ -517,13 +548,13 @@
                 </div>
                 <div class="max-w-3xl mx-auto text-lg text-center text-gray-300 space-y-6">
                     <p class="leading-relaxed">
-                        Hello! I'm Ronald Kanyepi, a passionate data enthusiast and business analytics professional dedicated to turning complex data into actionable insights. With a background in banking and advanced training through my Master’s in Business Analytics, I specialize in bridging the gap between raw data and strategic decision-making.
+                        Hello! I'm Ronald Kanyepi, a passionate data enthusiast and business analytics professional dedicated to turning complex data into actionable insights. With a background in banking and advanced training through my Master's in Business Analytics, I specialize in bridging the gap between raw data and strategic decision-making.
                     </p>
                     <p class="leading-relaxed">
-                     I thrive on solving challenging problems using data engineering, predictive modeling, and storytelling with data. Whether it’s building scalable data pipelines, forecasting trends, or crafting dashboards, I bring curiosity and precision to every project.
+                     I thrive on solving challenging problems using data engineering, predictive modeling, and storytelling with data. Whether it's building scalable data pipelines, forecasting trends, or crafting dashboards, I bring curiosity and precision to every project.
                     </p>
                     <p class="leading-relaxed">
-                       Beyond numbers and models, I’m a lifelong learner who’s always exploring new tools and techniques to sharpen my skills. When I’m not diving into datasets, you can find me following the latest in soccer or exploring new technologies.Welcome to my corner of the web — feel free to explore my projects, connect, or say hello!
+                       Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and techniques to sharpen my skills. When I'm not diving into datasets, you can find me following the latest in soccer or exploring new technologies.Welcome to my corner of the web — feel free to explore my projects, connect, or say hello!
                     </p>
                 </div>
             </div>
@@ -607,217 +638,177 @@
                 <div class="text-center mb-16">
                     <h2 class="section-title text-4xl font-bold">Technical Skills</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Cloud Platforms -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Cloud Platforms</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4 hover:translate-x-2 transition-transform">
-                                <i class="devicon-amazonwebservices-plain colored text-xl"></i>
-                                <span class="text-gray-300">Amazon AWS</span>
+
+                <!-- Skills Carousel -->
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Navigation Buttons -->
+                    <button id="prevSkill" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--panel-bg)] p-2 rounded-full shadow-lg hover:bg-opacity-80 transition-all hidden sm:block">
+                        <i data-lucide="chevron-left" class="w-6 h-6 text-[var(--accent-primary)]"></i>
+                    </button>
+                    <button id="nextSkill" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--panel-bg)] p-2 rounded-full shadow-lg hover:bg-opacity-80 transition-all hidden sm:block">
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-[var(--accent-primary)]"></i>
+                    </button>
+
+                    <!-- Skills Container -->
+                    <div class="skills-container overflow-hidden px-4 sm:px-12">
+                        <div id="skillsTrack" class="flex transition-transform duration-500 ease-out">
+                            <!-- Cloud Platforms -->
+                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                                <div class="panel p-3 sm:p-4 h-full">
+                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Cloud Platforms</h3>
+                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                            <i class="devicon-amazonwebservices-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Amazon AWS</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                            <i class="devicon-azure-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Microsoft Azure</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                            <i class="devicon-googlecloud-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Google Cloud</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                            <i class="devicon-heroku-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Heroku</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-4 hover:translate-x-2 transition-transform">
-                                <i class="devicon-azure-plain colored text-xl"></i>
-                                <span class="text-gray-300">Microsoft Azure</span>
+
+                            <!-- Databases -->
+                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                                <div class="panel p-3 sm:p-4 h-full">
+                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Databases</h3>
+                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-mongodb-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">MongoDB</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-mysql-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">MySQL</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-postgresql-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Postgres</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-redis-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Redis</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-4 hover:translate-x-2 transition-transform">
-                                <i class="devicon-googlecloud-plain colored text-xl"></i>
-                                <span class="text-gray-300">Google Cloud</span>
+
+                            <!-- Programming Languages -->
+                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                                <div class="panel p-3 sm:p-4 h-full">
+                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Programming Languages</h3>
+                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-python-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Python</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-r-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">R</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-java-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Java</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-azuresqldatabase-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">SQL</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-4 hover:translate-x-2 transition-transform">
-                                <i class="devicon-heroku-plain colored text-xl"></i>
-                                <span class="text-gray-300">Heroku</span>
+
+                            <!-- Data Science & ML -->
+                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                                <div class="panel p-3 sm:p-4 h-full">
+                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Data Science & ML</h3>
+                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-tensorflow-original colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">TensorFlow</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-pytorch-original colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">PyTorch</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-scikitlearn-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">scikit-learn</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-pandas-plain text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Pandas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Big Data Tools -->
+                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                                <div class="panel p-3 sm:p-4 h-full">
+                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Big Data Tools</h3>
+                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-apachespark-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Spark</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-apachekafka-original text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Kafka</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-apacheairflow-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Airflow</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-database text-base sm:text-lg text-[var(--accent-primary)]"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">dbt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DevOps & Tools -->
+                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                                <div class="panel p-3 sm:p-4 h-full">
+                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">DevOps & Tools</h3>
+                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-docker-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Docker</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-kubernetes-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Kubernetes</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="devicon-swagger-plain colored text-base sm:text-lg"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Swagger</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-chart-bar text-base sm:text-lg text-[var(--accent-primary)]"></i>
+                                            <span class="text-xs sm:text-sm text-gray-300">Tableau</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Databases -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Databases</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-amazonwebservices-plain colored text-xl"></i>
-                                <span class="text-gray-300">DynamoDB</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-microsoftsqlserver-plain colored text-xl"></i>
-                                <span class="text-gray-300">MSSQL</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-mongodb-plain colored text-xl"></i>
-                                <span class="text-gray-300">MongoDB</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-mysql-plain colored text-xl"></i>
-                                <span class="text-gray-300">MySQL</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-neo4j-plain colored text-xl"></i>
-                                <span class="text-gray-300">Neo4j</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-postgresql-plain colored text-xl"></i>
-                                <span class="text-gray-300">Postgres</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-redis-plain colored text-xl"></i>
-                                <span class="text-gray-300">Redis</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-amazonwebservices-plain colored text-xl"></i>
-                                <span class="text-gray-300">Redshift</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Programming Languages -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Programming Languages</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-r-plain colored text-xl"></i>
-                                <span class="text-gray-300">R</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-python-plain colored text-xl"></i>
-                                <span class="text-gray-300">Python</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-java-plain colored text-xl"></i>
-                                <span class="text-gray-300">Java</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-azuresqldatabase-plain colored text-xl"></i>
-                                <span class="text-gray-300">SQL</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Big Data Tools -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Big Data Tools</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-apachespark-plain colored text-xl"></i>
-                                <span class="text-gray-300">Spark</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-apachekafka-original text-xl"></i>
-                                <span class="text-gray-300">Kafka</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-apacheairflow-plain colored text-xl"></i>
-                                <span class="text-gray-300">Airflow</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="fas fa-database text-xl text-accent"></i>
-                                <span class="text-gray-300">dbt</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="fas fa-bolt text-xl text-accent"></i>
-                                <span class="text-gray-300">Databricks</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-yarn-plain colored text-xl"></i>
-                                <span class="text-gray-300">Yarn</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Data Science & ML -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Data Science & ML</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-keras-plain colored text-xl"></i>
-                                <span class="text-gray-300">Keras</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-matplotlib-plain text-xl"></i>
-                                <span class="text-gray-300">Matplotlib</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-mlflow-plain colored text-xl"></i>
-                                <span class="text-gray-300">MLflow</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-numpy-plain colored text-xl"></i>
-                                <span class="text-gray-300">NumPy</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-pandas-plain text-xl"></i>
-                                <span class="text-gray-300">Pandas</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-plotly-plain text-xl"></i>
-                                <span class="text-gray-300">Plotly</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-pytorch-original colored text-xl"></i>
-                                <span class="text-gray-300">PyTorch</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-scikitlearn-plain colored text-xl"></i>
-                                <span class="text-gray-300">scikit-learn</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-python-plain colored text-xl"></i>
-                                <span class="text-gray-300">SciPy</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="devicon-tensorflow-original colored text-xl"></i>
-                                <span class="text-gray-300">TensorFlow</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Web Development -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Web Development</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-fastapi-plain colored text-2xl"></i>
-                                <span class="text-gray-300">FastAPI</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-streamlit-plain colored text-2xl"></i>
-                                <span class="text-gray-300">Streamlit</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- DevOps & Tools -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">DevOps & Tools</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-docker-plain colored text-2xl"></i>
-                                <span class="text-gray-300">Docker</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-kubernetes-plain colored text-2xl"></i>
-                                <span class="text-gray-300">Kubernetes</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="devicon-swagger-plain colored text-2xl"></i>
-                                <span class="text-gray-300">Swagger</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Data Visualization -->
-                    <div class="panel p-6">
-                        <h3 class="text-xl font-bold mb-6 text-accent">Data Visualization</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4">
-                                <i class="fas fa-chart-bar text-2xl text-accent"></i>
-                                <span class="text-gray-300">Tableau</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <i class="fas fa-chart-pie text-2xl text-accent"></i>
-                                <span class="text-gray-300">Power BI</span>
-                            </div>
-                        </div>
+                    <!-- Dots Navigation -->
+                    <div class="flex justify-center gap-2 mt-6">
+                        <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="0"></button>
+                        <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="1"></button>
+                        <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="2"></button>
                     </div>
                 </div>
             </div>
@@ -837,7 +828,7 @@
 
                 <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-engineering">
-                        <img src="media/kafka_flow.gif" alt="Log Analysis" class="w-full h-56 object-cover">
+                        <img src="media/kafka_flow.gif" alt="Log Analysis" class="w-full h-56 ">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-1 text-white">Log-Realtime-Analysis Project</h3>
                             <p class="text-gray-400 mb-3 text-sm leading-relaxed">
@@ -870,6 +861,8 @@
                                 <span><i class="devicon-docker-plain colored"></i>Docker</span>
                                 <span><i class="devicon-kubernetes-plain colored"></i>Kubernetes</span>
                                 <span><i class="devicon-python-plain colored"></i>Python</span>
+                                 <span><i class="devicon-angular-plain colored"></i>Angular</span>
+                                  <span><i class="devicon-pandas-plain"></i>Pandas</span>
                             </div>
                              <div class="flex space-x-3">
                                 <a href="#" class="btn-secondary text-sm inline-flex items-center opacity-70 cursor-not-allowed"><i data-lucide="eye-off" class="w-4 h-4 mr-2"></i>Details Private</a>
@@ -886,8 +879,8 @@
                             <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
                                 <span class="font-semibold mr-1 text-gray-300">Tech:</span>
                                 <span><i class="devicon-python-plain colored"></i>Python</span>
-                                <span><i class="devicon-pandas-original colored"></i>Pandas</span>
-                                <span><i class="devicon-scikit-learn-plain colored"></i>Scikit-learn</span>
+                                <span><i class="devicon-pandas-plain"></i>Pandas</span>
+                                <span><i class="devicon-scikitlearn-plain colored"></i>Scikit-learn</span>
                                 <span><i class="devicon-seaborn-original colored"></i>Seaborn</span>
                                 <span><i class="devicon-jupyter-plain colored"></i>Jupyter</span>
                             </div>
@@ -1240,6 +1233,149 @@
                 }
             });
         });
+
+        // Skills Carousel
+        const skillsTrack = document.getElementById('skillsTrack');
+        const prevButton = document.getElementById('prevSkill');
+        const nextButton = document.getElementById('nextSkill');
+        const dots = document.querySelectorAll('.skill-dot');
+        let currentIndex = 0;
+        let slidesPerView = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+        const totalSlides = 6; // Total number of skill categories
+        let maxIndex = totalSlides - slidesPerView;
+        let isAnimating = false;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let initialTouchX = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+
+        function updateSlidesPerView() {
+            slidesPerView = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+            maxIndex = totalSlides - slidesPerView;
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+
+            // Update slide widths
+            const slides = document.querySelectorAll('.skill-slide');
+            slides.forEach(slide => {
+                if (window.innerWidth < 640) {
+                    slide.style.width = 'calc(100% - 2rem)';
+                } else if (window.innerWidth < 1024) {
+                    slide.style.width = 'calc(50% - 2rem)';
+                } else {
+                    slide.style.width = 'calc(33.333% - 2rem)';
+                }
+            });
+
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const slideWidth = 100 / slidesPerView;
+            const translateX = currentIndex * slideWidth;
+            skillsTrack.style.transform = `translateX(-${translateX}%)`;
+
+            // Update dots
+            const totalDots = Math.ceil(totalSlides / slidesPerView);
+            dots.forEach((dot, index) => {
+                if (index < totalDots) {
+                    dot.style.display = 'block';
+                    dot.classList.toggle('bg-[var(--accent-primary)]', index === currentIndex);
+                    dot.classList.toggle('bg-gray-600', index !== currentIndex);
+                } else {
+                    dot.style.display = 'none';
+                }
+            });
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, 500); // Match this with CSS transition duration
+        }
+
+        // Enhanced touch handling
+        skillsTrack.addEventListener('touchstart', (e) => {
+            if (isAnimating) return;
+            touchStartX = e.touches[0].clientX;
+            initialTouchX = touchStartX;
+            prevTranslate = currentTranslate;
+            skillsTrack.style.transition = 'none';
+        }, { passive: true });
+
+        skillsTrack.addEventListener('touchmove', (e) => {
+            if (isAnimating) return;
+            const currentX = e.touches[0].clientX;
+            const diff = currentX - initialTouchX;
+            const slideWidth = skillsTrack.offsetWidth / slidesPerView;
+            const translateX = prevTranslate + (diff / slideWidth) * 100;
+
+            // Add resistance at edges
+            if ((currentIndex === 0 && diff > 0) || (currentIndex === maxIndex && diff < 0)) {
+                currentTranslate = prevTranslate + (diff / slideWidth) * 50;
+            } else {
+                currentTranslate = translateX;
+            }
+
+            skillsTrack.style.transform = `translateX(${currentTranslate}%)`;
+        }, { passive: true });
+
+        skillsTrack.addEventListener('touchend', (e) => {
+            if (isAnimating) return;
+            touchEndX = e.changedTouches[0].clientX;
+            const diff = touchEndX - touchStartX;
+            const threshold = skillsTrack.offsetWidth * 0.2; // 20% of container width
+
+            skillsTrack.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+
+            if (Math.abs(diff) > threshold) {
+                if (diff > 0 && currentIndex > 0) {
+                    currentIndex--;
+                } else if (diff < 0 && currentIndex < maxIndex) {
+                    currentIndex++;
+                }
+            }
+
+            currentTranslate = -(currentIndex * (100 / slidesPerView));
+            skillsTrack.style.transform = `translateX(${currentTranslate}%)`;
+            updateCarousel();
+        }, { passive: true });
+
+        prevButton.addEventListener('click', () => {
+            if (isAnimating || currentIndex <= 0) return;
+            currentIndex--;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (isAnimating || currentIndex >= maxIndex) return;
+            currentIndex++;
+            updateCarousel();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                if (isAnimating || currentIndex === index) return;
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                updateSlidesPerView();
+            }, 250);
+        });
+
+        // Initialize
+        updateSlidesPerView();
+        dots[0].classList.add('bg-[var(--accent-primary)]');
 
     </script>
 </body>
