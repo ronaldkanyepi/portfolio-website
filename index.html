@@ -667,6 +667,19 @@
                 line-height: 1.75;
             }
         }
+
+        .logo-img {
+          height: 2.5rem;
+          max-width: 120px;
+          width: auto;
+          object-fit: contain;
+        }
+        @media (min-width: 640px) {
+          .logo-img { height: 4rem; max-width: 160px; }
+        }
+        @media (min-width: 768px) {
+          .logo-img { height: 5rem; max-width: 200px; }
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -676,7 +689,7 @@
             <div class="flex items-center justify-between h-20">
                  <!-- <a href="#hero" class="text-3xl font-bold accent-text tracking-wider">RK</a> -->
                 <a href="#hero" class="flex items-center">
-                    <img src="media/logo-1.png" alt="RK Logo" class="h-20 w-auto">
+                    <img src="media/logo-1.png" alt="RK Logo" class="logo-img">
                 </a>
                 <nav class="hidden md:flex space-x-5 items-center">
                     <a href="#hero" class="nav-link text-gray-300">Home</a>
