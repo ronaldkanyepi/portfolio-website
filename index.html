@@ -25,7 +25,7 @@
             --mobile-nav-height: 60px;
         }
 
-        /* Base font size adjustments for better mobile scaling */
+
         html {
             font-size: 16px;
         }
@@ -40,7 +40,7 @@
             background-color: var(--bg-dark);
             color: var(--text-primary);
             overflow-x: hidden;
-            padding-bottom: var(--mobile-nav-height); /* Add padding for mobile nav */
+            padding-bottom: var(--mobile-nav-height);
         }
 
         .panel {
@@ -58,22 +58,22 @@
             position: relative;
             display: inline-block;
             padding-bottom: 8px;
-            font-size: 1.25rem; /* Much smaller for mobile */
-            white-space: nowrap; /* Prevent wrapping */
+            font-size: 1.25rem;
+            white-space: nowrap;
         }
         @media (min-width: 640px) {
             .section-title {
-                font-size: 1.4rem; /* sm breakpoint */
+                font-size: 1.4rem;
             }
         }
         @media (min-width: 768px) {
             .section-title {
-                font-size: 1.6rem; /* md breakpoint */
+                font-size: 1.6rem;
             }
         }
         @media (min-width: 1024px) {
             .section-title {
-                font-size: 1.8rem; /* lg breakpoint */
+                font-size: 1.8rem;
             }
         }
         .section-title::after {
@@ -82,7 +82,7 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 50px; /* Smaller width for mobile */
+            width: 50px;
             height: 3px;
             background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
             border-radius: 2px;
@@ -90,116 +90,116 @@
         }
         @media (min-width: 640px) {
             .section-title::after {
-                width: 70px; /* Larger width for desktop */
+                width: 70px;
             }
         }
 
-        /* Update heading styles */
+
         h1 {
-            font-size: 1.4rem; /* Much smaller for mobile */
+            font-size: 1.4rem;
             line-height: 1.2;
         }
         h2 {
-            font-size: 1.25rem; /* Much smaller for mobile */
+            font-size: 1.25rem;
             line-height: 1.3;
         }
         h3 {
-            font-size: 1rem; /* Much smaller for mobile */
+            font-size: 1rem;
             line-height: 1.4;
         }
         h4 {
-            font-size: 0.9rem; /* Much smaller for mobile */
+            font-size: 0.9rem;
             line-height: 1.4;
         }
         h5 {
-            font-size: 0.85rem; /* Much smaller for mobile */
+            font-size: 0.85rem;
             line-height: 1.4;
         }
 
         @media (min-width: 640px) {
             h1 {
-                font-size: 1.6rem; /* sm breakpoint */
+                font-size: 1.6rem;
             }
             h2 {
-                font-size: 1.4rem; /* sm breakpoint */
+                font-size: 1.4rem;
             }
             h3 {
-                font-size: 1.1rem; /* sm breakpoint */
+                font-size: 1.1rem;
             }
             h4 {
-                font-size: 1rem; /* sm breakpoint */
+                font-size: 1rem;
             }
             h5 {
-                font-size: 0.9rem; /* sm breakpoint */
+                font-size: 0.9rem;
             }
         }
 
         @media (min-width: 768px) {
             h1 {
-                font-size: 1.8rem; /* md breakpoint */
+                font-size: 1.8rem;
             }
             h2 {
-                font-size: 1.6rem; /* md breakpoint */
+                font-size: 1.6rem;
             }
             h3 {
-                font-size: 1.25rem; /* md breakpoint */
+                font-size: 1.25rem;
             }
             h4 {
-                font-size: 1.1rem; /* md breakpoint */
+                font-size: 1.1rem;
             }
             h5 {
-                font-size: 1rem; /* md breakpoint */
+                font-size: 1rem;
             }
         }
 
         @media (min-width: 1024px) {
             h1 {
-                font-size: 2rem; /* lg breakpoint */
+                font-size: 2rem;
             }
             h2 {
-                font-size: 1.8rem; /* lg breakpoint */
+                font-size: 1.8rem;
             }
             h3 {
-                font-size: 1.4rem; /* lg breakpoint */
+                font-size: 1.4rem;
             }
             h4 {
-                font-size: 1.2rem; /* lg breakpoint */
+                font-size: 1.2rem;
             }
             h5 {
-                font-size: 1.1rem; /* lg breakpoint */
+                font-size: 1.1rem;
             }
         }
 
-        /* Update section spacing for mobile */
+
         section {
-            padding: 3rem 0; /* Base padding for mobile */
+            padding: 3rem 0;
         }
         @media (min-width: 768px) {
             section {
-                padding: 5rem 0; /* Larger padding for desktop */
+                padding: 5rem 0;
             }
         }
 
-        /* Update container padding for mobile */
+
         .container {
-            padding-left: 0.75rem; /* Smaller padding for mobile */
+            padding-left: 0.75rem;
             padding-right: 0.75rem;
         }
         @media (min-width: 640px) {
             .container {
-                padding-left: 1rem; /* sm breakpoint */
+                padding-left: 1rem;
                 padding-right: 1rem;
             }
         }
         @media (min-width: 768px) {
             .container {
-                padding-left: 1.5rem; /* md breakpoint */
+                padding-left: 1.5rem;
                 padding-right: 1.5rem;
             }
         }
         @media (min-width: 1024px) {
             .container {
-                padding-left: 2rem; /* lg breakpoint */
+                padding-left: 2rem;
                 padding-right: 2rem;
             }
         }
@@ -305,32 +305,32 @@
 
         /* Updated Skill icon size */
         .skill-card i {
-            font-size: 2rem; /* Smaller: approx w-8 h-8 */
-            margin-bottom: 0.5rem; /* mb-2 */
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
             margin-left: auto;
             margin-right: auto;
             display: block;
-            color: var(--accent-primary); /* Ensure DevIcons also get accent color if not 'colored' */
+            color: var(--accent-primary);
         }
-        .skill-card i.colored { /* Devicon 'colored' class might override this, which is fine */
+        .skill-card i.colored {
             color: inherit;
         }
          .skill-card h3 {
-            font-size: 0.875rem; /* text-sm */
+            font-size: 0.875rem;
         }
-        @media (min-width: 768px) { /* md breakpoint */
+        @media (min-width: 768px) {
             .skill-card i {
-                font-size: 2.25rem; /* Slightly larger for md screens */
+                font-size: 2.25rem;
             }
             .skill-card h3 {
-                font-size: 1rem; /* text-base */
+                font-size: 1rem;
             }
         }
         .skill-category-title {
-            font-size: 1.25rem; /* text-xl */
-            font-weight: 600; /* font-semibold */
-            color: var(--accent-secondary); /* Use secondary accent for category titles */
-            margin-bottom: 1.5rem; /* mb-6 */
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent-secondary);
+            margin-bottom: 1.5rem;
             text-align: center;
             padding-bottom: 0.5rem;
             border-bottom: 1px solid var(--border-color);
@@ -355,22 +355,22 @@
             visibility: hidden;
             position: absolute;
         }
-         /* Project card title adjustment */
+
         .project-card h3 {
-            font-size: 1.25rem; /* text-xl */
-            margin-bottom: 0.5rem; /* mb-2 */
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
         }
         .project-tech-stack span {
             display: inline-flex;
             align-items: center;
-            gap: 0.25rem; /* gap-1 */
+            gap: 0.25rem;
             background-color: rgba(0, 169, 255, 0.05);
             padding: 0.25rem 0.5rem;
             border-radius: 0.25rem;
             border: 1px solid rgba(0, 169, 255, 0.1);
         }
         .project-tech-stack i {
-            font-size: 1rem; /* text-base for icons in tech stack */
+            font-size: 1rem;
         }
 
 
@@ -451,24 +451,24 @@
          /* Education dates alignment */
         .education-item-header {
             display: flex;
-            flex-direction: column; /* Default for mobile */
-            margin-bottom: 0.25rem; /* mb-1 */
+            flex-direction: column;
+            margin-bottom: 0.25rem;
         }
-        .education-item-header h3 { /* Title */
-             margin-bottom: 0.25rem; /* Space between title and date on mobile */
+        .education-item-header h3 {
+             margin-bottom: 0.25rem;
         }
-        .education-item-header span { /* Date */
+        .education-item-header span {
             white-space: nowrap;
         }
 
-        @media (min-width: 640px) { /* sm breakpoint */
+        @media (min-width: 640px) {
             .education-item-header {
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: baseline; /* Better for text alignment */
+                align-items: baseline;
             }
             .education-item-header h3 {
-                margin-bottom: 0; /* No margin if side-by-side */
+                margin-bottom: 0;
             }
              .education-item-header span {
                 margin-top: 0;
@@ -1082,6 +1082,32 @@
                 </div>
 
                 <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                    <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+    <img src="media/the_analyst.png" alt="The Analyst" class="w-full h-56 object-cover">
+    <div class="p-6">
+        <h3 class="project-title-mini">The Analyst</h3>
+        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+               The Analyst is an AI assistant that turns natural language into SQL, runs the query, and explains the results. It uses a custom RAG system powered by ChromaDB to fetch the right schema context—and automatically detects and adapts to schema changes, ensuring reliable analysis every time. Built with LangGraph and Chainlit.
+        </p>
+        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+            <span><i class="devicon-python-plain colored"></i> Python</span>
+            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/></svg> LangGraph</span>
+            <span><i class="devicon-plain-wordmark"></i> Chainlit</span>
+            <span><i class="devicon-plain-wordmark"></i> RAG</span>
+            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#13C38F"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="#FFFFFF"/></svg> ChromaDB</span>
+            <span><i class="devicon-huggingface-original colored"></i> Llama</span>
+        </div>
+        <div class="flex space-x-3">
+            <a href="https://github.com/ronaldkanyepi/the-analyst-agent" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                <i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub
+            </a>
+<!--            <a href="#" target="_blank" class="text-sm inline-flex items-center bg-red-600 text-white px-3 py-1.5 rounded hover:bg-red-700">-->
+<!--                <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>Live Demo-->
+<!--            </a>-->
+        </div>
+    </div>
+</div>
                      <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
                     <img src="media/ronald_ai.png" alt="OCR to JSON" class="w-full h-56 object-cover">
                     <div class="p-6">
