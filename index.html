@@ -11,7 +11,6 @@
     <link rel="icon" type="image/png" href="media/favicon.png">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <style>
         :root {
             --bg-dark: #03060C; /* Very dark blue/black */
@@ -24,8 +23,6 @@
             --glow-color: rgba(0, 169, 255, 0.3);
             --mobile-nav-height: 60px;
         }
-
-
         html {
             font-size: 16px;
         }
@@ -34,7 +31,6 @@
                 font-size: 14px;
             }
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-dark);
@@ -42,18 +38,15 @@
             overflow-x: hidden;
             padding-bottom: var(--mobile-nav-height);
         }
-
         .panel {
             background-color: var(--panel-bg);
             border: 1px solid var(--border-color);
             border-radius: 0.75rem;
             box-shadow: 0 0 10px rgba(0,0,0,0.15), 0 0 3px var(--glow-color);
         }
-
         .accent-text { color: var(--accent-primary); }
         .accent-bg { background-color: var(--accent-primary); }
         .accent-border { border-color: var(--accent-primary); }
-
         .section-title {
             position: relative;
             display: inline-block;
@@ -93,8 +86,6 @@
                 width: 70px;
             }
         }
-
-
         h1 {
             font-size: 1.4rem;
             line-height: 1.2;
@@ -115,7 +106,6 @@
             font-size: 0.85rem;
             line-height: 1.4;
         }
-
         @media (min-width: 640px) {
             h1 {
                 font-size: 1.6rem;
@@ -133,7 +123,6 @@
                 font-size: 0.9rem;
             }
         }
-
         @media (min-width: 768px) {
             h1 {
                 font-size: 1.8rem;
@@ -151,7 +140,6 @@
                 font-size: 1rem;
             }
         }
-
         @media (min-width: 1024px) {
             h1 {
                 font-size: 2rem;
@@ -169,8 +157,6 @@
                 font-size: 1.1rem;
             }
         }
-
-
         section {
             padding: 3rem 0;
         }
@@ -179,8 +165,6 @@
                 padding: 5rem 0;
             }
         }
-
-
         .container {
             padding-left: 0.75rem;
             padding-right: 0.75rem;
@@ -203,12 +187,10 @@
                 padding-right: 2rem;
             }
         }
-
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
         ::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #007FBF; }
-
         .typed-cursor {
             opacity: 1;
             animation: blink 0.7s infinite;
@@ -218,7 +200,6 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
-
         .hero-bg-grid {
             position: absolute;
             top: 0;
@@ -226,8 +207,8 @@
             width: 100%;
             height: 100%;
             background-image:
-                linear-gradient(to right, rgba(0, 169, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(0, 169, 255, 0.05) 1px, transparent 1px);
+                    linear-gradient(to right, rgba(0, 169, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 169, 255, 0.05) 1px, transparent 1px);
             background-size: 30px 30px;
             z-index: 0;
             animation: pulseGrid 15s infinite alternate;
@@ -236,7 +217,6 @@
             from { opacity: 0.2; transform: scale(1); }
             to { opacity: 0.5; transform: scale(1.02); }
         }
-
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
@@ -262,8 +242,6 @@
         .nav-link.active {
             color: var(--accent-primary);
         }
-
-
         .btn-primary {
             background: linear-gradient(90deg, var(--accent-primary), #007FBF);
             color: white;
@@ -281,7 +259,7 @@
             background-color: rgba(255,255,255,0.03);
             border: 1px solid var(--border-color);
             color: var(--text-primary);
-             padding: 0.75rem 1.5rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 0.5rem;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -291,7 +269,6 @@
             border-color: var(--accent-primary);
             color: var(--accent-primary);
         }
-
         .skill-card, .project-card, .timeline-item-panel {
             background-color: var(--panel-bg);
             border: 1px solid var(--border-color);
@@ -302,7 +279,6 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.25), 0 0 15px var(--glow-color);
             border-color: var(--accent-primary);
         }
-
         /* Updated Skill icon size */
         .skill-card i {
             font-size: 2rem;
@@ -315,7 +291,7 @@
         .skill-card i.colored {
             color: inherit;
         }
-         .skill-card h3 {
+        .skill-card h3 {
             font-size: 0.875rem;
         }
         @media (min-width: 768px) {
@@ -335,8 +311,6 @@
             padding-bottom: 0.5rem;
             border-bottom: 1px solid var(--border-color);
         }
-
-
         .project-card img { transition: transform 0.3s ease-out; }
         .project-card:hover img { transform: scale(1.03); }
         .project-card {
@@ -355,7 +329,6 @@
             visibility: hidden;
             position: absolute;
         }
-
         .project-card h3 {
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
@@ -372,8 +345,6 @@
         .project-tech-stack i {
             font-size: 1rem;
         }
-
-
         .form-input, .form-textarea {
             background-color: #0F172A;
             border: 1px solid var(--border-color);
@@ -387,23 +358,19 @@
             border-color: var(--accent-primary);
             box-shadow: 0 0 0 2px var(--glow-color);
         }
-
         #custom-alert {
             transition: opacity 0.3s ease-in-out;
         }
-
         .modal-hidden {
             opacity: 0;
             pointer-events: none;
         }
-
         #custom-alert-content {
             transition: transform 0.3s ease-in-out;
         }
         .modal-hidden #custom-alert-content {
             transform: scale(0.95);
         }
-
         .timeline {
             position: relative;
             max-width: 42rem;
@@ -448,19 +415,18 @@
         .timeline-item-panel {
             border-radius: 0.5rem;
         }
-         /* Education dates alignment */
+        /* Education dates alignment */
         .education-item-header {
             display: flex;
             flex-direction: column;
             margin-bottom: 0.25rem;
         }
         .education-item-header h3 {
-             margin-bottom: 0.25rem;
+            margin-bottom: 0.25rem;
         }
         .education-item-header span {
             white-space: nowrap;
         }
-
         @media (min-width: 640px) {
             .education-item-header {
                 flex-direction: row;
@@ -470,12 +436,10 @@
             .education-item-header h3 {
                 margin-bottom: 0;
             }
-             .education-item-header span {
+            .education-item-header span {
                 margin-top: 0;
             }
         }
-
-
         .filter-btn {
             padding: 0.5rem 1rem;
             border: 1px solid var(--border-color);
@@ -497,7 +461,6 @@
             font-weight: 600;
             box-shadow: 0 0 10px var(--glow-color);
         }
-
         /* Mobile Bottom Navigation */
         .mobile-nav {
             display: none;
@@ -512,14 +475,12 @@
             border-top: 1px solid var(--border-color);
             z-index: 50;
         }
-
         .mobile-nav-items {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 100%;
         }
-
         .mobile-nav-item {
             display: flex;
             flex-direction: column;
@@ -531,38 +492,31 @@
             padding: 0.5rem;
             transition: all 0.3s ease;
         }
-
         .mobile-nav-item.active {
             color: var(--accent-primary);
         }
-
         .mobile-nav-item i {
             font-size: 1.25rem;
             margin-bottom: 0.25rem;
         }
-
         @media (max-width: 768px) {
             .mobile-nav {
                 display: block;
             }
-
             /* Hide desktop nav on mobile */
             #navbar nav {
                 display: none;
             }
-
             /* Adjust section padding for mobile */
             section {
                 padding-top: 2rem !important;
                 padding-bottom: 2rem !important;
             }
-
             /* Adjust hero section for mobile */
             #hero {
                 min-height: calc(100vh - var(--mobile-nav-height));
                 padding-top: 4rem;
             }
-
             /* Adjust headings for mobile */
             h1 {
                 font-size: 2.5rem !important;
@@ -573,24 +527,20 @@
             h3 {
                 font-size: 1.5rem !important;
             }
-
             /* Adjust container padding for mobile */
             .container {
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
             }
-
             /* Adjust grid layouts for mobile */
             .grid {
                 gap: 1rem !important;
             }
-
             /* Adjust card padding for mobile */
             .panel {
                 padding: 1rem !important;
             }
         }
-
         .skills-container {
             overflow: hidden;
             padding: 0 2rem;
@@ -621,7 +571,6 @@
                 width: calc(33.333% - 2rem); /* For 3 slides on desktop */
             }
         }
-
         /* Timeline panel title size fix for mobile */
         .timeline-title {
             font-size: 0.95rem !important;
@@ -639,7 +588,6 @@
                 font-size: 1.15rem !important;
             }
         }
-
         /* Smaller skill category title for mobile */
         .skill-category-title-mini {
             font-size: 0.75rem !important;
@@ -666,449 +614,441 @@
         @media (min-width: 1024px) {
             .project-title-mini { font-size: 1.20rem !important; }
         }
-
         .leading-relaxed {
             font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 1.1rem;
-            }
-            @media (min-width: 640px) {
+        }
+        @media (min-width: 640px) {
             .leading-relaxed {
                 font-size: 1.05rem;
                 line-height: 1.7;
             }
-            }
-            @media (min-width: 1024px) {
+        }
+        @media (min-width: 1024px) {
             .leading-relaxed {
                 font-size: 1.15rem;
                 line-height: 1.75;
             }
         }
-
         .logo-img {
-          height: 2.5rem;
-          max-width: 120px;
-          width: auto;
-          object-fit: contain;
+            height: 2.5rem;
+            max-width: 120px;
+            width: auto;
+            object-fit: contain;
         }
         @media (min-width: 640px) {
-          .logo-img { height: 4rem; max-width: 160px; }
+            .logo-img { height: 4rem; max-width: 160px; }
         }
         @media (min-width: 768px) {
-          .logo-img { height: 5rem; max-width: 180px; }
+            .logo-img { height: 5rem; max-width: 180px; }
         }
     </style>
 </head>
 <body class="antialiased">
-
-    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                 <!-- <a href="#hero" class="text-3xl font-bold accent-text tracking-wider">RK</a> -->
-                <a href="#hero" class="flex items-center">
-                    <img src="media/logo-1.png" alt="RK Logo" class="logo-img">
-                </a>
-                <nav class="hidden md:flex space-x-5 items-center">
-                    <a href="#hero" class="nav-link text-gray-300">Home</a>
-                    <a href="#about" class="nav-link text-gray-300">About</a>
-                    <a href="#experience" class="nav-link text-gray-300">Experience</a>
-                    <a href="#education" class="nav-link text-gray-300">Education</a>
-                    <a href="#skills" class="nav-link text-gray-300">Skills</a>
-                    <a href="#portfolio" class="nav-link text-gray-300">Portfolio</a>
-                    <a href="#contact" class="nav-link text-gray-300">Contact</a>
-                    <a href="Ronald Kanyepi Resume.pdf" rel="noopener" download class="btn-primary text-sm ml-2">
-                        Download CV
-                    </a>
-                </nav>
-                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:accent-text focus:outline-none">
-                    <i data-lucide="menu" class="w-7 h-7"></i>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-opacity-90 backdrop-blur-md" style="background-color: var(--panel-bg);">
-            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
-                <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Home</a>
-                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">About</a>
-                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Experience</a>
-                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Education</a>
-                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Skills</a>
-                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Portfolio</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Contact</a>
-                <a href="Ronald Kanyepi Resume.pdf"  rel="noopener" download class="block mt-2 px-3 py-3 text-base font-medium text-white accent-bg hover:bg-sky-600 rounded-lg text-center">
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a href="#hero" class="flex items-center">
+                <img src="media/logo-1.png" alt="RK Logo" class="logo-img">
+            </a>
+            <nav class="hidden md:flex space-x-5 items-center">
+                <a href="#hero" class="nav-link text-gray-300">Home</a>
+                <a href="#about" class="nav-link text-gray-300">About</a>
+                <a href="#experience" class="nav-link text-gray-300">Experience</a>
+                <a href="#education" class="nav-link text-gray-300">Education</a>
+                <a href="#skills" class="nav-link text-gray-300">Skills</a>
+                <a href="#portfolio" class="nav-link text-gray-300">Portfolio</a>
+                <a href="#contact" class="nav-link text-gray-300">Contact</a>
+                <a href="Ronald Kanyepi Resume.pdf" rel="noopener" download class="btn-primary text-sm ml-2">
                     Download CV
                 </a>
             </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="hero" class="min-h-screen flex items-center justify-center pt-20 relative">
-            <div class="hero-bg-grid"></div>
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <img src="media/image.png" alt="Ronald Kanyepi" class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-[var(--accent-primary)] mx-auto mb-6 shadow-xl shadow-[var(--glow-color)]">
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-sky-400 to-indigo-400">
-                    Hi, I'm <span class="accent-text">Ronald Kanyepi</span>
-                </h1>
-                <p class="text-2xl md:text-3xl font-medium mb-8 text-gray-300">
-                    <span id="typed-text" class="font-semibold"></span><span class="typed-cursor">|</span>
-                </p>
-                <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-10">
-                    Data-Driven Solutions, Tailored for Tomorrow. Passionate AI Engineer & Data Scientist.
-                </p>
-                <div class="space-y-4 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row justify-center">
-                    <a href="#portfolio" class="btn-primary text-sm">
-                        View My Work
-                    </a>
-                    <a href="#contact" class="btn-secondary text-sm">
-                        Get In Touch
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="py-20 md:py-32">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl font-bold">About Me</h2>
-                </div>
-                <div class="max-w-3xl mx-auto text-left text-gray-300 space-y-6">
-                    <p class="leading-relaxed">
-                        Hello! I'm Ronald Nyasha Kanyepi, a passionate data enthusiast and business analytics professional dedicated to turning complex data into actionable insights. With a background in banking and advanced training through my Master's in Business Analytics, I specialize in bridging the gap between raw data and strategic decision-making.
-                    </p>
-                    <p class="leading-relaxed">
-                     I thrive on solving challenging problems using data engineering, predictive modeling, and storytelling with data. Whether it's building scalable data pipelines, forecasting trends, or crafting dashboards, I bring curiosity and precision to every project.
-                    </p>
-                    <p class="leading-relaxed">
-                       Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and techniques to sharpen my skills. When I'm not diving into datasets, you can find me following the latest in soccer or enjoying nature walks. Welcome to my corner of the web! Feel free to explore my projects, connect, or say hello!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="py-20 md:py-32 bg-opacity-50" style="background-color: rgba(10, 15, 26, 0.7);">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl font-bold">Work Experience</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item-container">
-                        <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
-                        <div class="timeline-item-panel panel p-6">
-                            <div class="education-item-header">
-                                <h3 class="timeline-title">Data Scientist</h3>
-                                <span class="text-sm text-gray-400">Dec 2024 - Present</span>
-                            </div>
-                            <p class="text-md text-sky-400 mb-2">Pennybacker Capital, Austin, Texas</p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                                    <li>Built ML models forecasting GAV for a $4B+ real estate portfolio with 1% MAPE.</li>
-                                    <li>Combined 50+ datasets; used NLP on Google Reviews to detect operational risks.</li>
-                                    <li>Deployed models using MLflow; tuned with Optuna, explained via SHAP/LIME.</li>
-                                    <li>Delivered forecasts to guide acquisition and disposition.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item-container">
-                        <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
-                        <div class="timeline-item-panel panel p-6">
-                            <div class="education-item-header">
-                                <h3 class="timeline-title">Senior Data Specialist</h3>
-                                <span class="text-sm text-gray-400">Mar 2024 - Jun 2024</span>
-                            </div>
-                            <p class="text-md text-sky-400 mb-2">AFC Commercial Bank, Harare, Zimbabwe</p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                                <li>Led a cross functional team on AFC Bank’s VISA card project.</li>
-                                <li>Drove a 200% POS transaction surge via a strategic OK-Supermarket partnership.</li>
-                                <li>Built a Python–Spark–Dash dashboard analyzing 20K+ ATM/POS terminals.</li>
-                                <li>Implemented a predictive model to reduce POS client churn by 15%.</li>
-                            </ul>
-                        </div>
-                    </div>
-                     <div class="timeline-item-container">
-                        <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
-                        <div class="timeline-item-panel panel p-6">
-                            <div class="education-item-header">
-                                <h3 class="timeline-title">Data Specialist</h3>
-                                <span class="text-sm text-gray-400">June 2022 - Feb 2024</span>
-                            </div>
-                            <p class="text-md text-sky-400 mb-2">AFC Commercial Bank, Harare, Zimbabwe</p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                                  <li>Developed a Python backend with FastAPI to integrate the Reserve Bank of Zimbabwe (RBZ) web service for the Credit Reference Bureau (CRB), reducing data processing time by 40% while enhancing regulatory compliance.</li>
-                                  <li>Developed Kafka-Python ETL pipelines to synchronize core banking data and postilion switch data, ensuring accurate account metrics across all 45 AFC Commercial Bank branches.</li>
-                                  <li>Automated merchant reporting with Airflow and DBT, boosting efficiency 80%.</li>
-                                  <li>Modernized reconciliation app to microservices with Docker & FastAPI improving efficiency</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="py-20 md:py-32">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl font-bold">Education</h2>
-                </div>
-                 <div class="timeline">
-                    <div class="timeline-item-container">
-                        <div class="timeline-icon"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
-                        <div class="timeline-item-panel panel p-6">
-                            <div class="education-item-header">
-                                <h3 class="timeline-title">MSc. in Business Analytics (MSBA)</h3>
-                                <span class="text-sm text-gray-400">Aug 2024 - May 2025</span>
-                            </div>
-                            <p class="text-md text-sky-400 mb-2">Emory University – Goizueta Business School</p>
-                            <p class="text-gray-400 text-sm">STEM credentialed program.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item-container">
-                        <div class="timeline-icon"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
-                        <div class="timeline-item-panel panel p-6">
-                           <div class="education-item-header">
-                                <h3 class="timeline-title">BSc. in Business Studies & Computing Science</h3>
-                                <span class="text-sm text-gray-400">Feb 2017 - May 2021</span>
-                            </div>
-                            <p class="text-md text-sky-400">University of Zimbabwe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="py-20 md:py-32">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl font-bold">Technical Skills</h2>
-                </div>
-
-                <!-- Skills Carousel -->
-                <div class="relative max-w-4xl mx-auto">
-                    <!-- Navigation Buttons -->
-                    <button id="prevSkill" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--panel-bg)] p-2 rounded-full shadow-lg hover:bg-opacity-80 transition-all hidden sm:block">
-                        <i data-lucide="chevron-left" class="w-6 h-6 text-[var(--accent-primary)]"></i>
-                    </button>
-                    <button id="nextSkill" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--panel-bg)] p-2 rounded-full shadow-lg hover:bg-opacity-80 transition-all hidden sm:block">
-                        <i data-lucide="chevron-right" class="w-6 h-6 text-[var(--accent-primary)]"></i>
-                    </button>
-
-                    <!-- Skills Container -->
-                    <div class="skills-container overflow-hidden px-4 sm:px-12">
-                        <div id="skillsTrack" class="flex transition-transform duration-500 ease-out">
-                            <!-- Cloud Platforms -->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Cloud Platforms</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
-                                            <i class="devicon-amazonwebservices-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Amazon AWS</span>
-                                        </div>
-                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
-                                            <i class="devicon-azure-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Microsoft Azure</span>
-                                        </div>
-                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
-                                            <i class="devicon-googlecloud-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Google Cloud</span>
-                                        </div>
-                                        <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
-                                            <i class="devicon-heroku-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Heroku</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Databases -->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Databases</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-mongodb-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">MongoDB</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-mysql-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">MySQL</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-postgresql-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Postgres</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-redis-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Redis</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Programming Languages -->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Programming Languages</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-python-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Python</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-r-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">R</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-java-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Java</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-azuresqldatabase-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">SQL</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Data Science & ML -->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Data Science & ML</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-tensorflow-original colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">TensorFlow</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-pytorch-original colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">PyTorch</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-scikitlearn-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">scikit-learn</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-pandas-plain text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Pandas</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Big Data Tools -->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Big Data Tools</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-apachespark-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Spark</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-apachekafka-original text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Kafka</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-apacheairflow-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Airflow</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="fas fa-database text-base sm:text-lg text-[var(--accent-primary)]"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">dbt</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- DevOps & Tools -->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">DevOps & Tools</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-docker-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Docker</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-kubernetes-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Kubernetes</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="devicon-swagger-plain colored text-base sm:text-lg"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Swagger</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-<!--                            Data Visualisation-->
-                            <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
-                                <div class="panel p-3 sm:p-4 h-full">
-                                    <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Visualization</h3>
-                                    <div class="grid grid-cols-1 gap-2 sm:gap-3">
-                                        <div class="flex items-center gap-2">
-                                            <i class="fas fa-chart-bar text-base sm:text-lg text-[var(--accent-primary)]"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Power BI</span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="fas fa-chart-bar text-base sm:text-lg text-[var(--accent-primary)]"></i>
-                                            <span class="text-xs sm:text-sm text-gray-300">Tableau</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Dots Navigation -->
-                    <div class="flex justify-center gap-2 mt-6">
-                        <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="0"></button>
-                        <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="1"></button>
-                        <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="2"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="py-20 md:py-32 bg-opacity-50" style="background-color: rgba(10, 15, 26, 0.7);">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="section-title text-4xl font-bold">My Portfolio</h2>
-                </div>
-                <div id="project-filters" class="flex flex-wrap justify-center gap-3 mb-10">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
-                    <button class="filter-btn" data-filter="data-science">Data Science & AI</button>
-                    <button class="filter-btn" data-filter="data-viz">Data Visualization</button>
-                </div>
-
-                <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-                    <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
-    <img src="media/the_analyst.png" alt="The Analyst" class="w-full h-56 object-cover">
-    <div class="p-6">
-        <h3 class="project-title-mini">The Analyst</h3>
-        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
-               The Analyst is an AI assistant that turns natural language into SQL, runs the query, and explains the results. It uses a custom RAG system powered by ChromaDB to fetch the right schema context and auto-detect schema changes, ensuring reliable analysis every time. Built with LangGraph and Chainlit.
-        </p>
-        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
-            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
-            <span><i class="devicon-python-plain colored"></i> Python</span>
-            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/></svg> LangGraph</span>
-            <span><i class="devicon-plain-wordmark"></i> Chainlit</span>
-            <span><i class="devicon-plain-wordmark"></i>CRAG</span>
-            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#13C38F"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="#FFFFFF"/></svg> ChromaDB</span>
-            <span><i class="devicon-huggingface-original colored"></i> Llama</span>
-        </div>
-        <div class="flex space-x-3">
-            <a href="https://github.com/ronaldkanyepi/the-analyst-agent" target="_blank" class="btn-primary text-sm inline-flex items-center">
-                <i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub
-            </a>
-<!--            <a href="#" target="_blank" class="text-sm inline-flex items-center bg-red-600 text-white px-3 py-1.5 rounded hover:bg-red-700">-->
-<!--                <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>Live Demo-->
-<!--            </a>-->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:accent-text focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
         </div>
     </div>
-</div>
-                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+    <div id="mobile-menu" class="hidden md:hidden bg-opacity-90 backdrop-blur-md" style="background-color: var(--panel-bg);">
+        <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+            <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">About</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Experience</a>
+            <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Education</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Skills</a>
+            <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Portfolio</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:accent-text hover:bg-opacity-20 hover:bg-sky-500">Contact</a>
+            <a href="Ronald Kanyepi Resume.pdf"  rel="noopener" download class="block mt-2 px-3 py-3 text-base font-medium text-white accent-bg hover:bg-sky-600 rounded-lg text-center">
+                Download CV
+            </a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-20 relative">
+        <div class="hero-bg-grid"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <img src="media/image.png" alt="Ronald Kanyepi" class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-[var(--accent-primary)] mx-auto mb-6 shadow-xl shadow-[var(--glow-color)]">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-sky-400 to-indigo-400">
+                Hi, I'm <span class="accent-text">Ronald Kanyepi</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-medium mb-8 text-gray-300">
+                <span id="typed-text" class="font-semibold"></span><span class="typed-cursor">|</span>
+            </p>
+            <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-10">
+                Data-Driven Solutions, Tailored for Tomorrow. Passionate AI Engineer & Data Scientist.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row justify-center">
+                <a href="#portfolio" class="btn-primary text-sm">
+                    View My Work
+                </a>
+                <a href="#contact" class="btn-secondary text-sm">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold">About Me</h2>
+            </div>
+            <div class="max-w-3xl mx-auto text-left text-gray-300 space-y-6">
+                <p class="leading-relaxed">
+                    Hello! I'm Ronald Nyasha Kanyepi, a passionate data enthusiast and business analytics professional dedicated to turning complex data into actionable insights. With a background in banking and advanced training through my Master's in Business Analytics, I specialize in bridging the gap between raw data and strategic decision-making.
+                </p>
+                <p class="leading-relaxed">
+                    I thrive on solving challenging problems using data engineering, predictive modeling, and storytelling with data. Whether it's building scalable data pipelines, forecasting trends, or crafting dashboards, I bring curiosity and precision to every project.
+                </p>
+                <p class="leading-relaxed">
+                    Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and techniques to sharpen my skills. When I'm not diving into datasets, you can find me following the latest in soccer or enjoying nature walks. Welcome to my corner of the web! Feel free to explore my projects, connect, or say hello!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="py-20 md:py-32 bg-opacity-50" style="background-color: rgba(10, 15, 26, 0.7);">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item-container">
+                    <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
+                    <div class="timeline-item-panel panel p-6">
+                        <div class="education-item-header">
+                            <h3 class="timeline-title">Data Scientist</h3>
+                            <span class="text-sm text-gray-400">Dec 2024 - Present</span>
+                        </div>
+                        <p class="text-md text-sky-400 mb-2">Pennybacker Capital, Austin, Texas</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
+                            <li>Built ML models forecasting GAV for a $4B+ real estate portfolio with 1% MAPE.</li>
+                            <li>Combined 50+ datasets; used NLP on Google Reviews to detect operational risks.</li>
+                            <li>Deployed models using MLflow; tuned with Optuna, explained via SHAP/LIME.</li>
+                            <li>Delivered forecasts to guide acquisition and disposition.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item-container">
+                    <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
+                    <div class="timeline-item-panel panel p-6">
+                        <div class="education-item-header">
+                            <h3 class="timeline-title">Senior Data Specialist</h3>
+                            <span class="text-sm text-gray-400">Mar 2024 - Jun 2024</span>
+                        </div>
+                        <p class="text-md text-sky-400 mb-2">AFC Commercial Bank, Harare, Zimbabwe</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
+                            <li>Led a cross functional team on AFC Bank’s VISA card project.</li>
+                            <li>Drove a 200% POS transaction surge via a strategic OK-Supermarket partnership.</li>
+                            <li>Built a Python–Spark–Dash dashboard analyzing 20K+ ATM/POS terminals.</li>
+                            <li>Implemented a predictive model to reduce POS client churn by 15%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item-container">
+                    <div class="timeline-icon"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
+                    <div class="timeline-item-panel panel p-6">
+                        <div class="education-item-header">
+                            <h3 class="timeline-title">Data Specialist</h3>
+                            <span class="text-sm text-gray-400">June 2022 - Feb 2024</span>
+                        </div>
+                        <p class="text-md text-sky-400 mb-2">AFC Commercial Bank, Harare, Zimbabwe</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
+                            <li>Developed a Python backend with FastAPI to integrate the Reserve Bank of Zimbabwe (RBZ) web service for the Credit Reference Bureau (CRB), reducing data processing time by 40% while enhancing regulatory compliance.</li>
+                            <li>Developed Kafka-Python ETL pipelines to synchronize core banking data and postilion switch data, ensuring accurate account metrics across all 45 AFC Commercial Bank branches.</li>
+                            <li>Automated merchant reporting with Airflow and DBT, boosting efficiency 80%.</li>
+                            <li>Modernized reconciliation app to microservices with Docker & FastAPI improving efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="py-20 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold">Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item-container">
+                    <div class="timeline-icon"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                    <div class="timeline-item-panel panel p-6">
+                        <div class="education-item-header">
+                            <h3 class="timeline-title">MSc. in Business Analytics (MSBA)</h3>
+                            <span class="text-sm text-gray-400">Aug 2024 - May 2025</span>
+                        </div>
+                        <p class="text-md text-sky-400 mb-2">Emory University – Goizueta Business School</p>
+                        <p class="text-gray-400 text-sm">STEM credentialed program.</p>
+                    </div>
+                </div>
+                <div class="timeline-item-container">
+                    <div class="timeline-icon"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                    <div class="timeline-item-panel panel p-6">
+                        <div class="education-item-header">
+                            <h3 class="timeline-title">BSc. in Business Studies & Computing Science</h3>
+                            <span class="text-sm text-gray-400">Feb 2017 - May 2021</span>
+                        </div>
+                        <p class="text-md text-sky-400">University of Zimbabwe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-20 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold">Technical Skills</h2>
+            </div>
+            <div class="relative max-w-4xl mx-auto">
+                <button id="prevSkill" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--panel-bg)] p-2 rounded-full shadow-lg hover:bg-opacity-80 transition-all hidden sm:block">
+                    <i data-lucide="chevron-left" class="w-6 h-6 text-[var(--accent-primary)]"></i>
+                </button>
+                <button id="nextSkill" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--panel-bg)] p-2 rounded-full shadow-lg hover:bg-opacity-80 transition-all hidden sm:block">
+                    <i data-lucide="chevron-right" class="w-6 h-6 text-[var(--accent-primary)]"></i>
+                </button>
+                <div class="skills-container overflow-hidden px-4 sm:px-12">
+                    <div id="skillsTrack" class="flex transition-transform duration-500 ease-out">
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Cloud Platforms</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                        <i class="devicon-amazonwebservices-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Amazon AWS</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                        <i class="devicon-azure-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Microsoft Azure</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                        <i class="devicon-googlecloud-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Google Cloud</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                        <i class="devicon-heroku-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Heroku</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Databases</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-mongodb-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">MongoDB</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-mysql-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">MySQL</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-postgresql-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Postgres</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-redis-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Redis</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Programming Languages</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-python-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Python</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-r-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">R</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-java-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Java</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-azuresqldatabase-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">SQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Data Science & ML</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-tensorflow-original colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">TensorFlow</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-pytorch-original colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">PyTorch</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-scikitlearn-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">scikit-learn</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-pandas-plain text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Pandas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Big Data Tools</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-apachespark-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Spark</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-apachekafka-original text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Kafka</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-apacheairflow-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Airflow</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-database text-base sm:text-lg text-[var(--accent-primary)]"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">dbt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">DevOps & Tools</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-docker-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Docker</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-kubernetes-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Kubernetes</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="devicon-swagger-plain colored text-base sm:text-lg"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Swagger</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-slide w-[280px] sm:w-[320px] lg:w-[300px] flex-shrink-0 px-2 sm:px-3">
+                            <div class="panel p-3 sm:p-4 h-full">
+                                <h3 class="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-[var(--accent-primary)]">Visualization</h3>
+                                <div class="grid grid-cols-1 gap-2 sm:gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-chart-bar text-base sm:text-lg text-[var(--accent-primary)]"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Power BI</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-chart-bar text-base sm:text-lg text-[var(--accent-primary)]"></i>
+                                        <span class="text-xs sm:text-sm text-gray-300">Tableau</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center gap-2 mt-6">
+                    <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="0"></button>
+                    <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="1"></button>
+                    <button class="skill-dot w-2 h-2 rounded-full bg-gray-600 transition-all" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="py-20 md:py-32 bg-opacity-50" style="background-color: rgba(10, 15, 26, 0.7);">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-4xl font-bold">My Portfolio</h2>
+            </div>
+            <div id="project-filters" class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+                <button class="filter-btn" data-filter="data-science">Data Science & AI</button>
+                <button class="filter-btn" data-filter="data-viz">Data Visualization</button>
+            </div>
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+                    <img src="media/query_craft.png" alt="QueryCraft AI" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title-mini">QueryCraft AI</h3>
+                        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+                            QueryCraft AI is an AI assistant that turns natural language into SQL, validates and executes queries, and returns results. It uses LangGraph and MCP for multi-step reasoning, PostgreSQL + pgvector for data,embeddings(RAG) and memory Langfuse for observability, and ZITADEL for secure authentication. Built with Next.js 15 + Shadcn and FastAPI.
+                        </p>
+                        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+                            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
+                            <span><i class="devicon-nextjs-original"></i> Next.js 15</span>
+                            <span><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                            <span><i class="devicon-docker-plain colored"></i> Docker</span>
+                            <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL + pgvector</span>
+                            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/></svg> LangGraph</span>
+                            <span><i class="devicon-mongodb-plain colored"></i> MCP</span>
+                            <span><i class="devicon-azure-plain colored"></i> Langfuse</span>
+                            <span><i class="devicon-openid-plain colored"></i> ZITADEL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/ronaldkanyepi/QueryCraft-AI" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                                <i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+                    <img src="media/the_analyst.png" alt="The Analyst" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title-mini">The Analyst</h3>
+                        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+                            The Analyst is an AI assistant that turns natural language into SQL, runs the query, and explains the results. It uses a custom RAG system powered by ChromaDB to fetch the right schema context and auto-detect schema changes, ensuring reliable analysis every time. Built with LangGraph and Chainlit.
+                        </p>
+                        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+                            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
+                            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/></svg> LangGraph</span>
+                            <span><i class="devicon-plain-wordmark"></i> Chainlit</span>
+                            <span><i class="devicon-plain-wordmark"></i>CRAG</span>
+                            <span><svg class="w-4 h-4 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#13C38F"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="#FFFFFF"/></svg> ChromaDB</span>
+                            <span><i class="devicon-huggingface-original colored"></i> Llama</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/ronaldkanyepi/the-analyst-agent" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                                <i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
                     <img src="media/ronald_ai.png" alt="OCR to JSON" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="project-title-mini">Ronald AI</h3>
@@ -1122,8 +1062,6 @@
                             <span><i class="devicon-gradio--plain colored"></i>LlamaIndex</span>
                             <span><i class="devicon-gradio--plain colored"></i>RAG</span>
                             <span><i class="devicon-huggingface-original colored"></i> Hugging Face</span>
-
-
                         </div>
                         <div class="flex space-x-3">
                             <a href="https://github.com/ronaldkanyepi/PersonalRAG" target="_blank" class="btn-primary text-sm inline-flex items-center">
@@ -1135,7 +1073,7 @@
                         </div>
                     </div>
                 </div>
-                     <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
                     <img src="media/ai-json.png" alt="OCR to JSON" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="project-title-mini">Document-to-JSON AI Extractor</h3>
@@ -1162,588 +1100,499 @@
                         </div>
                     </div>
                 </div>
-                    <div class="project-card rounded-xl overflow-hidden group" data-categories="data-engineering">
-                        <img src="media/kafka_flow.gif" alt="Log Analysis" class="w-full h-56 ">
-                        <div class="p-6">
-                            <h3 class="project-title-mini">Log-Realtime-Analysis Project</h3>
-                            <p class="text-gray-400 mb-3 text-sm leading-relaxed">
-                                A scalable architecture for real-time log processing and visualization handling 60,000 events/second. Built with a Kafka-Spark ETL pipeline, DynamoDB for storing aggregate real-time metrics, and Python Dash for interactive dashboards.
-                            </p>
-                            <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
-                                <span class="font-semibold mr-1 text-gray-300">Tech:</span>
-                                <span><i class="devicon-apachekafka-original"></i>Kafka</span>
-                                <span><i class="devicon-apachespark-plain colored"></i>Spark</span>
-                                <span><i class="devicon-amazonwebservices-plain colored"></i>DynamoDB</span>
-                                <span><i class="devicon-python-plain colored"></i>Python</span>
-                                <span><i class="devicon-plotly-plain"></i>Dash</span>
-                                <span><i class="devicon-docker-plain colored"></i>Docker</span>
-
-                            </div>
-                            <div class="flex space-x-3">
-                                <a href="https://github.com/ronaldkanyepi/Log-Realtime-Analysis" target="_blank" class="btn-primary text-sm inline-flex items-center"><i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub</a>
-                            </div>
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-engineering">
+                    <img src="media/kafka_flow.gif" alt="Log Analysis" class="w-full h-56 ">
+                    <div class="p-6">
+                        <h3 class="project-title-mini">Log-Realtime-Analysis Project</h3>
+                        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+                            A scalable architecture for real-time log processing and visualization handling 60,000 events/second. Built with a Kafka-Spark ETL pipeline, DynamoDB for storing aggregate real-time metrics, and Python Dash for interactive dashboards.
+                        </p>
+                        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+                            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+                            <span><i class="devicon-apachekafka-original"></i>Kafka</span>
+                            <span><i class="devicon-apachespark-plain colored"></i>Spark</span>
+                            <span><i class="devicon-amazonwebservices-plain colored"></i>DynamoDB</span>
+                            <span><i class="devicon-python-plain colored"></i>Python</span>
+                            <span><i class="devicon-plotly-plain"></i>Dash</span>
+                            <span><i class="devicon-docker-plain colored"></i>Docker</span>
                         </div>
-                    </div>
-                    <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
-                          <img src="media/recon.png" alt="Reconciliation System" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="project-title-mini">Reconciliation System Development</h3>
-                            <p class="text-gray-400 mb-3 text-sm leading-relaxed">
-                                Modernized monolithic reconciliation app into microservices using Docker and Kubernetes at AFC Commercial Bank. Code access restricted due to bank's security policies.
-                            </p>
-                             <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
-                                <span class="font-semibold mr-1 text-gray-300">Tech:</span>
-                                <span><i class="devicon-docker-plain colored"></i>Docker</span>
-                                <span><i class="devicon-kubernetes-plain colored"></i>Kubernetes</span>
-                                <span><i class="devicon-python-plain colored"></i>Python</span>
-                                 <span><i class="devicon-angular-plain colored"></i>Angular</span>
-                                  <span><i class="devicon-pandas-plain"></i>Pandas</span>
-                            </div>
-                             <div class="flex space-x-3">
-                                <a href="#" class="btn-secondary text-sm inline-flex items-center opacity-70 cursor-not-allowed"><i data-lucide="eye-off" class="w-4 h-4 mr-2"></i>Details Private</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
-                        <img src="media/churn.jpeg" alt="Customer Churn Analysis" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="project-title-mini">Customer Churn Analysis</h3>
-                            <p class="text-gray-400 mb-3 text-sm leading-relaxed">
-                                Built an end-to-end churn prediction pipeline using statistical and machine learning models to help a telecom company identify at-risk customers and reduce churn. Included EDA, feature engineering, model evaluation, and explainability.
-                            </p>
-                            <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
-                                <span class="font-semibold mr-1 text-gray-300">Tech:</span>
-                                <span><i class="devicon-python-plain colored"></i>Python</span>
-                                <span><i class="devicon-pandas-plain"></i>Pandas</span>
-                                <span><i class="devicon-scikitlearn-plain colored"></i>Scikit-learn</span>
-                                <span><i class="devicon-seaborn-original colored"></i>Seaborn</span>
-                                <span><i class="devicon-jupyter-plain colored"></i>Jupyter</span>
-                            </div>
-                            <div class="flex space-x-3">
-                                <a href="https://github.com/ronaldkanyepi/Customer-Churn-Analysis" target="_blank" class="btn-primary text-sm inline-flex items-center"><i data-lucide="external-link" class="w-4 h-4 mr-2"></i>View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card rounded-xl overflow-hidden group" data-categories="data-viz">
-                        <img src="media/southern-africa-health.png" alt="Southern-Africa-Health-Indicators-Analysis" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="project-title-mini">Southern Africa Health Indicators Analysis</h3>
-                            <p class="text-gray-400 mb-3 text-sm leading-relaxed">
-                                Visualizing Health Trends in Southern Africa: Analyzing World Bank data (2013–2020) to uncover patterns in life expectancy, infant mortality, HIV prevalence, and maternal mortality.
-                            </p>
-                            <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
-                                <span class="font-semibold mr-1 text-gray-300">Tech:</span>
-                                <span><i class="devicon-python-plain colored"></i>Python</span>
-                                <span><i class="devicon-pandas-plain"></i>Pandas</span>
-                                <span><i class="devicon-matplotlib-plain"></i>Matplotlib</span>
-                            </div>
-                             <div class="flex space-x-3">
-                                <a href="https://github.com/ronaldkanyepi/Southern-Africa-Health-Indicators-Analysis" target="_blank" class="btn-primary text-sm inline-flex items-center"><i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub</a>
-                            </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/ronaldkanyepi/Log-Realtime-Analysis" target="_blank" class="btn-primary text-sm inline-flex items-center"><i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub</a>
                         </div>
                     </div>
                 </div>
-
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+                    <img src="media/recon.png" alt="Reconciliation System" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title-mini">Reconciliation System Development</h3>
+                        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+                            Modernized monolithic reconciliation app into microservices using Docker and Kubernetes at AFC Commercial Bank. Code access restricted due to bank's security policies.
+                        </p>
+                        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+                            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+                            <span><i class="devicon-docker-plain colored"></i>Docker</span>
+                            <span><i class="devicon-kubernetes-plain colored"></i>Kubernetes</span>
+                            <span><i class="devicon-python-plain colored"></i>Python</span>
+                            <span><i class="devicon-angular-plain colored"></i>Angular</span>
+                            <span><i class="devicon-pandas-plain"></i>Pandas</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="btn-secondary text-sm inline-flex items-center opacity-70 cursor-not-allowed"><i data-lucide="eye-off" class="w-4 h-4 mr-2"></i>Details Private</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-science">
+                    <img src="media/churn.jpeg" alt="Customer Churn Analysis" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title-mini">Customer Churn Analysis</h3>
+                        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+                            Built an end-to-end churn prediction pipeline using statistical and machine learning models to help a telecom company identify at-risk customers and reduce churn. Included EDA, feature engineering, model evaluation, and explainability.
+                        </p>
+                        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+                            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+                            <span><i class="devicon-python-plain colored"></i>Python</span>
+                            <span><i class="devicon-pandas-plain"></i>Pandas</span>
+                            <span><i class="devicon-scikitlearn-plain colored"></i>Scikit-learn</span>
+                            <span><i class="devicon-seaborn-original colored"></i>Seaborn</span>
+                            <span><i class="devicon-jupyter-plain colored"></i>Jupyter</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/ronaldkanyepi/Customer-Churn-Analysis" target="_blank" class="btn-primary text-sm inline-flex items-center"><i data-lucide="external-link" class="w-4 h-4 mr-2"></i>View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card rounded-xl overflow-hidden group" data-categories="data-viz">
+                    <img src="media/southern-africa-health.png" alt="Southern-Africa-Health-Indicators-Analysis" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title-mini">Southern Africa Health Indicators Analysis</h3>
+                        <p class="text-gray-400 mb-3 text-sm leading-relaxed">
+                            Visualizing Health Trends in Southern Africa: Analyzing World Bank data (2013–2020) to uncover patterns in life expectancy, infant mortality, HIV prevalence, and maternal mortality.
+                        </p>
+                        <div class="project-tech-stack flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-sky-400 mb-4">
+                            <span class="font-semibold mr-1 text-gray-300">Tech:</span>
+                            <span><i class="devicon-python-plain colored"></i>Python</span>
+                            <span><i class="devicon-pandas-plain"></i>Pandas</span>
+                            <span><i class="devicon-matplotlib-plain"></i>Matplotlib</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/ronaldkanyepi/Southern-Africa-Health-Indicators-Analysis" target="_blank" class="btn-primary text-sm inline-flex items-center"><i data-lucide="github" class="w-4 h-4 mr-2"></i>View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="contact" class="py-20 md:py-32">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl font-bold">Get In Touch</h2>
+        </div>
+    </section>
+    <section id="contact" class="py-20 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold">Get In Touch</h2>
+            </div>
+            <div class="max-w-2xl mx-auto panel p-8 md:p-12">
+                <p class="text-center text-gray-400 mb-8">
+                    Have a project in mind, a question, or just want to connect? Feel free to reach out!
+                </p>
+                <form id="contact-form" novalidate> <div class="mb-6">
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full form-input" placeholder="Your Name" required>
                 </div>
-                <div class="max-w-2xl mx-auto panel p-8 md:p-12">
-                    <p class="text-center text-gray-400 mb-8">
-                        Have a project in mind, a question, or just want to connect? Feel free to reach out!
-                    </p>
-                    <form id="contact-form" novalidate> <div class="mb-6">
-                            <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Full Name</label>
-                            <input type="text" id="name" name="name" class="w-full form-input" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-6">
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full form-input" placeholder="Enter your email" value="" required>
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Message</label>
-                            <textarea id="message" name="message" rows="5" class="w-full form-textarea" placeholder="Your message..." required></textarea>
-                        </div>
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full form-input" placeholder="Enter your email" value="" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full form-textarea" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-lg w-full sm:w-auto">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div id="custom-alert" class="modal-hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div id="custom-alert-content" class="w-full max-w-md p-8 rounded-lg shadow-2xl" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); box-shadow: 0 0 30px var(--glow-color);">
                         <div class="text-center">
-                            <button type="submit" class="btn-primary text-lg w-full sm:w-auto">
-                                Send Message
-                            </button>
+                            <svg class="w-16 h-16 mx-auto mb-4" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <h3 class="mb-2 text-2xl font-bold" style="color: var(--text-primary);">Form Temporarily Disabled</h3>
+                            <p class="mb-6 text-md" style="color: var(--text-secondary);">This contact form has been temporarily disabled. For any inquiries, please contact Ronald directly:</p>
+                            <div class="space-y-4 text-left bg-dark p-4 rounded-md" style="background-color: var(--bg-dark);">
+                                <p class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3" style="color: var(--accent-primary);" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.024 11.024 0 006.29 6.29l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                                    <a href="tel:+16789390239" class="hover:underline" style="color: var(--text-primary);">+1 678 939 0239</a>
+                                </p>
+                                <p class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3" style="color: var(--accent-primary);" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                    <a href="mailto:kanyepironald@gmail.com" class="hover:underline" style="color: var(--text-primary);">kanyepironald@gmail.com</a>
+                                </p>
+                            </div>
                         </div>
-                    </form>
-
-                     <!-- Custom Alert Modal -->
-    <div id="custom-alert" class="modal-hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background-color: rgba(0, 0, 0, 0.6);">
-        <!-- Modal content -->
-        <div id="custom-alert-content" class="w-full max-w-md p-8 rounded-lg shadow-2xl" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); box-shadow: 0 0 30px var(--glow-color);">
-            <div class="text-center">
-
-                <svg class="w-16 h-16 mx-auto mb-4" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-
-                <h3 class="mb-2 text-2xl font-bold" style="color: var(--text-primary);">Form Temporarily Disabled</h3>
-
-                <p class="mb-6 text-md" style="color: var(--text-secondary);">This contact form has been temporarily disabled. For any inquiries, please contact Ronald directly:</p>
-
-
-                <div class="space-y-4 text-left bg-dark p-4 rounded-md" style="background-color: var(--bg-dark);">
-                    <p class="flex items-center">
-                        <svg class="w-5 h-5 mr-3" style="color: var(--accent-primary);" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.024 11.024 0 006.29 6.29l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                        <a href="tel:+16789390239" class="hover:underline" style="color: var(--text-primary);">+1 678 939 0239</a>
-                    </p>
-                    <p class="flex items-center">
-                        <svg class="w-5 h-5 mr-3" style="color: var(--accent-primary);" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                        <a href="mailto:kanyepironald@gmail.com" class="hover:underline" style="color: var(--text-primary);">kanyepironald@gmail.com</a>
-                    </p>
+                        <button id="close-alert-btn" class="w-full px-4 py-2 mt-8 text-lg font-semibold rounded-lg" style="background-color: var(--accent-primary); color: var(--bg-dark);">Got it</button>
+                    </div>
                 </div>
             </div>
-            <button id="close-alert-btn" class="w-full px-4 py-2 mt-8 text-lg font-semibold rounded-lg" style="background-color: var(--accent-primary); color: var(--bg-dark);">Got it</button>
         </div>
+    </section>
+</main>
+<footer class="py-12 border-t" style="border-color: var(--border-color);">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://github.com/ronaldkanyepi" target="_blank" class="text-gray-400 hover:accent-text transition duration-150">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ronald-nyasha-kanyepi/" target="_blank" class="text-gray-400 hover:accent-text transition duration-150">
+                <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://twitter.com/ronaldkanyepi" target="_blank" class="text-gray-400 hover:accent-text transition duration-150">
+                <i class="fab fa-twitter text-2xl"></i>
+            </a>
+        </div>
+        <p class="text-sm">&copy; <span id="current-year"></span> Ronald Kanyepi. All rights reserved.</p>
+        <p class="text-xs mt-1">Made with love <span class="text-red-500">&hearts;</span></p>
     </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-12 border-t" style="border-color: var(--border-color);">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
-            <div class="flex justify-center space-x-6 mb-6">
-                <a href="https://github.com/ronaldkanyepi" target="_blank" class="text-gray-400 hover:accent-text transition duration-150">
-                    <i class="fab fa-github text-2xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ronald-nyasha-kanyepi/" target="_blank" class="text-gray-400 hover:accent-text transition duration-150">
-                    <i class="fab fa-linkedin text-2xl"></i>
-                </a>
-                <a href="https://twitter.com/ronaldkanyepi" target="_blank" class="text-gray-400 hover:accent-text transition duration-150">
-                     <i class="fab fa-twitter text-2xl"></i>
-                </a>
-            </div>
-            <p class="text-sm">&copy; <span id="current-year"></span> Ronald Kanyepi. All rights reserved.</p>
-            <p class="text-xs mt-1">Made with love <span class="text-red-500">&hearts;</span></p>
-
-        </div>
-    </footer>
-
-    <!-- Add Mobile Navigation -->
-    <nav class="mobile-nav">
-        <div class="mobile-nav-items">
-            <a href="#hero" class="mobile-nav-item active">
-                <i data-lucide="home"></i>
-                <span>Home</span>
-            </a>
-            <a href="#about" class="mobile-nav-item">
-                <i data-lucide="user"></i>
-                <span>About</span>
-            </a>
-            <a href="#skills" class="mobile-nav-item">
-                <i data-lucide="code"></i>
-                <span>Skills</span>
-            </a>
-            <a href="#portfolio" class="mobile-nav-item">
-                <i data-lucide="briefcase"></i>
-                <span>Work</span>
-            </a>
-            <a href="#contact" class="mobile-nav-item">
-                <i data-lucide="mail"></i>
-                <span>Contact</span>
-            </a>
-        </div>
-    </nav>
-
-    <script>
+</footer>
+<nav class="mobile-nav">
+    <div class="mobile-nav-items">
+        <a href="#hero" class="mobile-nav-item active">
+            <i data-lucide="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="mobile-nav-item">
+            <i data-lucide="user"></i>
+            <span>About</span>
+        </a>
+        <a href="#skills" class="mobile-nav-item">
+            <i data-lucide="code"></i>
+            <span>Skills</span>
+        </a>
+        <a href="#portfolio" class="mobile-nav-item">
+            <i data-lucide="briefcase"></i>
+            <span>Work</span>
+        </a>
+        <a href="#contact" class="mobile-nav-item">
+            <i data-lucide="mail"></i>
+            <span>Contact</span>
+        </a>
+    </div>
+</nav>
+<script>
+    lucide.createIcons();
+    const navbar = document.getElementById('navbar');
+    const navbarInitialBg = 'transparent';
+    const navbarScrolledBg = 'rgba(3, 6, 12, 0.85)';
+    navbar.style.backgroundColor = navbarInitialBg;
+    navbar.style.backdropFilter = 'blur(10px)';
+    navbar.style.webkitBackdropFilter = 'blur(10px)';
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.backgroundColor = navbarScrolledBg;
+            navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
+            navbar.classList.add('py-2');
+            navbar.classList.remove('h-20');
+        } else {
+            navbar.style.backgroundColor = navbarInitialBg;
+            navbar.style.boxShadow = 'none';
+            navbar.classList.remove('py-2');
+            navbar.classList.add('h-20');
+        }
+    });
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuIcon = mobileMenuButton.querySelector('i');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const iconName = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+        mobileMenuIcon.setAttribute('data-lucide', iconName);
         lucide.createIcons();
-
-        const navbar = document.getElementById('navbar');
-        const navbarInitialBg = 'transparent';
-        const navbarScrolledBg = 'rgba(3, 6, 12, 0.85)';
-
-        navbar.style.backgroundColor = navbarInitialBg;
-        navbar.style.backdropFilter = 'blur(10px)';
-        navbar.style.webkitBackdropFilter = 'blur(10px)';
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.style.backgroundColor = navbarScrolledBg;
-                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
-                navbar.classList.add('py-2');
-                navbar.classList.remove('h-20');
-            } else {
-                navbar.style.backgroundColor = navbarInitialBg;
-                navbar.style.boxShadow = 'none';
-                navbar.classList.remove('py-2');
-                navbar.classList.add('h-20');
+    });
+    document.querySelectorAll('#mobile-menu a, #navbar nav > a[href^="#"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (link.getAttribute('href').startsWith('#')) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+                document.querySelectorAll('#navbar nav > a').forEach(navLink => navLink.classList.remove('active', 'accent-text'));
+                const targetHref = link.getAttribute('href');
+                const desktopLink = document.querySelector(`#navbar nav a[href="${targetHref}"]`);
+                if(desktopLink) desktopLink.classList.add('active', 'accent-text');
             }
         });
-
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuIcon = mobileMenuButton.querySelector('i');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const iconName = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
-            mobileMenuIcon.setAttribute('data-lucide', iconName);
-            lucide.createIcons();
-        });
-
-        document.querySelectorAll('#mobile-menu a, #navbar nav > a[href^="#"]').forEach(link => {
-            link.addEventListener('click', (e) => {
-                if (link.getAttribute('href').startsWith('#')) {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuIcon.setAttribute('data-lucide', 'menu');
-                    lucide.createIcons();
-
-                    document.querySelectorAll('#navbar nav > a').forEach(navLink => navLink.classList.remove('active', 'accent-text'));
-                    const targetHref = link.getAttribute('href');
-                    const desktopLink = document.querySelector(`#navbar nav a[href="${targetHref}"]`);
-                    if(desktopLink) desktopLink.classList.add('active', 'accent-text');
-                }
-            });
-        });
-
-        const typedTextSpan = document.getElementById("typed-text");
-        const textArray = ["ML Engineer", "Data Architect", "Data Scientist", "Innovator"];
-        const typingDelay = 120;
-        const erasingDelay = 60;
-        const newTextDelay = 2000;
-        let textArrayIndex = 0;
-        let charIndex = 0;
-
-        function type() {
-            if (typedTextSpan && charIndex < textArray[textArrayIndex].length) {
-                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, typingDelay);
-            } else {
-                setTimeout(erase, newTextDelay);
-            }
+    });
+    const typedTextSpan = document.getElementById("typed-text");
+    const textArray = ["ML Engineer", "Data Architect", "Data Scientist", "Innovator"];
+    const typingDelay = 120;
+    const erasingDelay = 60;
+    const newTextDelay = 2000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    function type() {
+        if (typedTextSpan && charIndex < textArray[textArrayIndex].length) {
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingDelay);
+        } else {
+            setTimeout(erase, newTextDelay);
         }
-
-        function erase() {
-            if (typedTextSpan && charIndex > 0) {
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(erase, erasingDelay);
-            } else {
-                textArrayIndex = (textArrayIndex + 1) % textArray.length;
-                setTimeout(type, typingDelay + 500);
-            }
+    }
+    function erase() {
+        if (typedTextSpan && charIndex > 0) {
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+        } else {
+            textArrayIndex = (textArrayIndex + 1) % textArray.length;
+            setTimeout(type, typingDelay + 500);
         }
-        if (textArray.length && typedTextSpan) setTimeout(type, newTextDelay);
-
-        const currentYearSpan = document.getElementById('current-year');
-        if(currentYearSpan) currentYearSpan.textContent = new Date().getFullYear();
-
-        const sections = document.querySelectorAll("main section[id]");
-        const navLinks = document.querySelectorAll("#navbar nav > a[href^='#']");
-
-        window.addEventListener("scroll", navHighlighter);
-
-        function navHighlighter() {
-            let scrollY = window.pageYOffset;
-            let currentSectionId = "";
-            const headerHeight = document.getElementById('navbar').offsetHeight;
-            const offset = headerHeight + 20;
-
-            sections.forEach(current => {
-                const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - offset;
-                let sectionId = current.getAttribute("id");
-
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    currentSectionId = sectionId;
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove("active", "accent-text");
-                if (link.getAttribute("href") === `#${currentSectionId}`) {
-                    link.classList.add("active", "accent-text");
-                }
-            });
-
-            const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
-            mobileNavItems.forEach(item => {
-                item.classList.remove('active');
-                const href = item.getAttribute('href').substring(1);
-                if (href === currentSectionId) {
-                    item.classList.add('active');
-                }
-            });
-
-            if (currentSectionId === "" && sections.length > 0 && scrollY < sections[0].offsetTop - offset) {
-                const heroLink = document.querySelector("#navbar nav a[href='#hero']");
-                const heroMobileItem = document.querySelector('.mobile-nav-item[href="#hero"]');
-                if (heroLink) heroLink.classList.add("active", "accent-text");
-                if (heroMobileItem) heroMobileItem.classList.add('active');
+    }
+    if (textArray.length && typedTextSpan) setTimeout(type, newTextDelay);
+    const currentYearSpan = document.getElementById('current-year');
+    if(currentYearSpan) currentYearSpan.textContent = new Date().getFullYear();
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll("#navbar nav > a[href^='#']");
+    window.addEventListener("scroll", navHighlighter);
+    function navHighlighter() {
+        let scrollY = window.pageYOffset;
+        let currentSectionId = "";
+        const headerHeight = document.getElementById('navbar').offsetHeight;
+        const offset = headerHeight + 20;
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - offset;
+            let sectionId = current.getAttribute("id");
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                currentSectionId = sectionId;
             }
-        }
-        navHighlighter();
-
-        const filterButtons = document.querySelectorAll('#project-filters .filter-btn');
-        const projectCards = document.querySelectorAll('#projects-grid .project-card');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                const filterValue = button.getAttribute('data-filter');
-
-                projectCards.forEach(card => {
-                    const cardCategories = card.getAttribute('data-categories');
-                    if (filterValue === 'all' || (cardCategories && cardCategories.includes(filterValue))) {
-                        card.classList.remove('hidden-project');
-                        card.style.display = 'block';
-                    } else {
-                        card.classList.add('hidden-project');
-                        setTimeout(() => {
-                           if (card.classList.contains('hidden-project')) {
-                               card.style.display = 'none';
-                           }
-                        }, 400);
-                    }
-                });
-            });
         });
-
-        // Add click handlers for mobile nav
+        navLinks.forEach(link => {
+            link.classList.remove("active", "accent-text");
+            if (link.getAttribute("href") === `#${currentSectionId}`) {
+                link.classList.add("active", "accent-text");
+            }
+        });
         const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
-
-        function updateMobileNav() {
-            let scrollY = window.pageYOffset;
-            let currentSectionId = "";
-
-            sections.forEach(current => {
-                const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 100;
-                let sectionId = current.getAttribute("id");
-
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    currentSectionId = sectionId;
-                }
-            });
-
-            mobileNavItems.forEach(item => {
-                item.classList.remove('active');
-                const href = item.getAttribute('href').substring(1);
-                if (href === currentSectionId) {
-                    item.classList.add('active');
-                }
-            });
-
-            if (currentSectionId === "" && sections.length > 0 && scrollY < sections[0].offsetTop - 100) {
-                const homeItem = document.querySelector('.mobile-nav-item[href="#hero"]');
-                if (homeItem) homeItem.classList.add('active');
-            }
-        }
-
-        window.addEventListener('scroll', updateMobileNav);
-        updateMobileNav();
-
-        // Add click handlers for mobile nav
         mobileNavItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = item.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-
-                if (targetSection) {
-                    // Calculate the offset needed to show the section title
-                    const headerHeight = document.getElementById('navbar').offsetHeight;
-                    const mobileNavHeight = document.querySelector('.mobile-nav').offsetHeight;
-                    const sectionTop = targetSection.offsetTop;
-                    const offset = headerHeight + 20; // Add 20px for some breathing room
-
-                    // Scroll to the section with the calculated offset
-                    window.scrollTo({
-                        top: sectionTop - offset,
-                        behavior: 'smooth'
-                    });
-
-                    // Update active states
-                    mobileNavItems.forEach(navItem => navItem.classList.remove('active'));
-                    item.classList.add('active');
+            item.classList.remove('active');
+            const href = item.getAttribute('href').substring(1);
+            if (href === currentSectionId) {
+                item.classList.add('active');
+            }
+        });
+        if (currentSectionId === "" && sections.length > 0 && scrollY < sections[0].offsetTop - offset) {
+            const heroLink = document.querySelector("#navbar nav a[href='#hero']");
+            const heroMobileItem = document.querySelector('.mobile-nav-item[href="#hero"]');
+            if (heroLink) heroLink.classList.add("active", "accent-text");
+            if (heroMobileItem) heroMobileItem.classList.add('active');
+        }
+    }
+    navHighlighter();
+    const filterButtons = document.querySelectorAll('#project-filters .filter-btn');
+    const projectCards = document.querySelectorAll('#projects-grid .project-card');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            const filterValue = button.getAttribute('data-filter');
+            projectCards.forEach(card => {
+                const cardCategories = card.getAttribute('data-categories');
+                if (filterValue === 'all' || (cardCategories && cardCategories.includes(filterValue))) {
+                    card.classList.remove('hidden-project');
+                    card.style.display = 'block';
+                } else {
+                    card.classList.add('hidden-project');
+                    setTimeout(() => {
+                        if (card.classList.contains('hidden-project')) {
+                            card.style.display = 'none';
+                        }
+                    }, 400);
                 }
             });
         });
-
-        // Skills Carousel
-        const skillsTrack = document.getElementById('skillsTrack');
-        const prevButton = document.getElementById('prevSkill');
-        const nextButton = document.getElementById('nextSkill');
-        const dots = document.querySelectorAll('.skill-dot');
-        let currentIndex = 0;
-        let slidesPerView = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
-        const totalSlides = 6; // Total number of skill categories
-        let maxIndex = totalSlides - slidesPerView;
-        let isAnimating = false;
-        let touchStartX = 0;
-        let touchEndX = 0;
-        let initialTouchX = 0;
-        let currentTranslate = 0;
-        let prevTranslate = 0;
-
-        function updateSlidesPerView() {
-            slidesPerView = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
-            maxIndex = totalSlides - slidesPerView;
-            if (currentIndex > maxIndex) {
-                currentIndex = maxIndex;
+    });
+    // Add click handlers for mobile nav
+    const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+    function updateMobileNav() {
+        let scrollY = window.pageYOffset;
+        let currentSectionId = "";
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 100;
+            let sectionId = current.getAttribute("id");
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                currentSectionId = sectionId;
             }
-
-            // Update slide widths
-            const slides = document.querySelectorAll('.skill-slide');
-            slides.forEach(slide => {
-                if (window.innerWidth < 640) {
-                    slide.style.width = 'calc(100% - 2rem)';
-                } else if (window.innerWidth < 1024) {
-                    slide.style.width = 'calc(50% - 2rem)';
-                } else {
-                    slide.style.width = 'calc(33.333% - 2rem)';
-                }
-            });
-
-            updateCarousel();
+        });
+        mobileNavItems.forEach(item => {
+            item.classList.remove('active');
+            const href = item.getAttribute('href').substring(1);
+            if (href === currentSectionId) {
+                item.classList.add('active');
+            }
+        });
+        if (currentSectionId === "" && sections.length > 0 && scrollY < sections[0].offsetTop - 100) {
+            const homeItem = document.querySelector('.mobile-nav-item[href="#hero"]');
+            if (homeItem) homeItem.classList.add('active');
         }
-
-        function updateCarousel() {
-            if (isAnimating) return;
-            isAnimating = true;
-
-            const slideWidth = 100 / slidesPerView;
-            const translateX = currentIndex * slideWidth;
-            skillsTrack.style.transform = `translateX(-${translateX}%)`;
-
-            // Update dots
-            const totalDots = Math.ceil(totalSlides / slidesPerView);
-            dots.forEach((dot, index) => {
-                if (index < totalDots) {
-                    dot.style.display = 'block';
-                    dot.classList.toggle('bg-[var(--accent-primary)]', index === currentIndex);
-                    dot.classList.toggle('bg-gray-600', index !== currentIndex);
-                } else {
-                    dot.style.display = 'none';
-                }
-            });
-
-            setTimeout(() => {
-                isAnimating = false;
-            }, 500); // Match this with CSS transition duration
+    }
+    window.addEventListener('scroll', updateMobileNav);
+    updateMobileNav();
+    // Add click handlers for mobile nav
+    mobileNavItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = item.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                // Calculate the offset needed to show the section title
+                const headerHeight = document.getElementById('navbar').offsetHeight;
+                const mobileNavHeight = document.querySelector('.mobile-nav').offsetHeight;
+                const sectionTop = targetSection.offsetTop;
+                const offset = headerHeight + 20; // Add 20px for some breathing room
+                // Scroll to the section with the calculated offset
+                window.scrollTo({
+                    top: sectionTop - offset,
+                    behavior: 'smooth'
+                });
+                // Update active states
+                mobileNavItems.forEach(navItem => navItem.classList.remove('active'));
+                item.classList.add('active');
+            }
+        });
+    });
+    // Skills Carousel
+    const skillsTrack = document.getElementById('skillsTrack');
+    const prevButton = document.getElementById('prevSkill');
+    const nextButton = document.getElementById('nextSkill');
+    const dots = document.querySelectorAll('.skill-dot');
+    let currentIndex = 0;
+    let slidesPerView = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+    const totalSlides = 6; // Total number of skill categories
+    let maxIndex = totalSlides - slidesPerView;
+    let isAnimating = false;
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let initialTouchX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    function updateSlidesPerView() {
+        slidesPerView = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+        maxIndex = totalSlides - slidesPerView;
+        if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
         }
-
-        // Enhanced touch handling
-        skillsTrack.addEventListener('touchstart', (e) => {
-            if (isAnimating) return;
-            touchStartX = e.touches[0].clientX;
-            initialTouchX = touchStartX;
-            prevTranslate = currentTranslate;
-            skillsTrack.style.transition = 'none';
-        }, { passive: true });
-
-        skillsTrack.addEventListener('touchmove', (e) => {
-            if (isAnimating) return;
-            const currentX = e.touches[0].clientX;
-            const diff = currentX - initialTouchX;
-            const slideWidth = skillsTrack.offsetWidth / slidesPerView;
-            const translateX = prevTranslate + (diff / slideWidth) * 100;
-
-            // Add resistance at edges
-            if ((currentIndex === 0 && diff > 0) || (currentIndex === maxIndex && diff < 0)) {
-                currentTranslate = prevTranslate + (diff / slideWidth) * 50;
+        // Update slide widths
+        const slides = document.querySelectorAll('.skill-slide');
+        slides.forEach(slide => {
+            if (window.innerWidth < 640) {
+                slide.style.width = 'calc(100% - 2rem)';
+            } else if (window.innerWidth < 1024) {
+                slide.style.width = 'calc(50% - 2rem)';
             } else {
-                currentTranslate = translateX;
+                slide.style.width = 'calc(33.333% - 2rem)';
             }
-
-            skillsTrack.style.transform = `translateX(${currentTranslate}%)`;
-        }, { passive: true });
-
-        skillsTrack.addEventListener('touchend', (e) => {
-            if (isAnimating) return;
-            touchEndX = e.changedTouches[0].clientX;
-            const diff = touchEndX - touchStartX;
-            const threshold = skillsTrack.offsetWidth * 0.2; // 20% of container width
-
-            skillsTrack.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
-
-            if (Math.abs(diff) > threshold) {
-                if (diff > 0 && currentIndex > 0) {
-                    currentIndex--;
-                } else if (diff < 0 && currentIndex < maxIndex) {
-                    currentIndex++;
-                }
-            }
-
-            currentTranslate = -(currentIndex * (100 / slidesPerView));
-            skillsTrack.style.transform = `translateX(${currentTranslate}%)`;
-            updateCarousel();
-        }, { passive: true });
-
-        prevButton.addEventListener('click', () => {
-            if (isAnimating || currentIndex <= 0) return;
-            currentIndex--;
-            updateCarousel();
         });
-
-        nextButton.addEventListener('click', () => {
-            if (isAnimating || currentIndex >= maxIndex) return;
-            currentIndex++;
-            updateCarousel();
-        });
-
+        updateCarousel();
+    }
+    function updateCarousel() {
+        if (isAnimating) return;
+        isAnimating = true;
+        const slideWidth = 100 / slidesPerView;
+        const translateX = currentIndex * slideWidth;
+        skillsTrack.style.transform = `translateX(-${translateX}%)`;
+        // Update dots
+        const totalDots = Math.ceil(totalSlides / slidesPerView);
         dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                if (isAnimating || currentIndex === index) return;
-                currentIndex = index;
-                updateCarousel();
-            });
-        });
-
-
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                updateSlidesPerView();
-            }, 250);
-        });
-
-
-        updateSlidesPerView();
-        dots[0].classList.add('bg-[var(--accent-primary)]');
-
-
-
-        const contactForm = document.getElementById('contact-form');
-        const customAlert = document.getElementById('custom-alert');
-        const closeAlertBtn = document.getElementById('close-alert-btn');
-
-
-        contactForm.addEventListener('submit', function(event) {
-
-            event.preventDefault();
-
-
-            customAlert.classList.remove('modal-hidden');
-        });
-
-
-        function closeModal() {
-            customAlert.classList.add('modal-hidden');
-        }
-
-
-        closeAlertBtn.addEventListener('click', closeModal);
-
-
-        customAlert.addEventListener('click', function(event) {
-            if (event.target === customAlert) {
-                closeModal();
+            if (index < totalDots) {
+                dot.style.display = 'block';
+                dot.classList.toggle('bg-[var(--accent-primary)]', index === currentIndex);
+                dot.classList.toggle('bg-gray-600', index !== currentIndex);
+            } else {
+                dot.style.display = 'none';
             }
         });
-
-    </script>
+        setTimeout(() => {
+            isAnimating = false;
+        }, 500); // Match this with CSS transition duration
+    }
+    // Enhanced touch handling
+    skillsTrack.addEventListener('touchstart', (e) => {
+        if (isAnimating) return;
+        touchStartX = e.touches[0].clientX;
+        initialTouchX = touchStartX;
+        prevTranslate = currentTranslate;
+        skillsTrack.style.transition = 'none';
+    }, { passive: true });
+    skillsTrack.addEventListener('touchmove', (e) => {
+        if (isAnimating) return;
+        const currentX = e.touches[0].clientX;
+        const diff = currentX - initialTouchX;
+        const slideWidth = skillsTrack.offsetWidth / slidesPerView;
+        const translateX = prevTranslate + (diff / slideWidth) * 100;
+        // Add resistance at edges
+        if ((currentIndex === 0 && diff > 0) || (currentIndex === maxIndex && diff < 0)) {
+            currentTranslate = prevTranslate + (diff / slideWidth) * 50;
+        } else {
+            currentTranslate = translateX;
+        }
+        skillsTrack.style.transform = `translateX(${currentTranslate}%)`;
+    }, { passive: true });
+    skillsTrack.addEventListener('touchend', (e) => {
+        if (isAnimating) return;
+        touchEndX = e.changedTouches[0].clientX;
+        const diff = touchEndX - touchStartX;
+        const threshold = skillsTrack.offsetWidth * 0.2; // 20% of container width
+        skillsTrack.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0 && currentIndex > 0) {
+                currentIndex--;
+            } else if (diff < 0 && currentIndex < maxIndex) {
+                currentIndex++;
+            }
+        }
+        currentTranslate = -(currentIndex * (100 / slidesPerView));
+        skillsTrack.style.transform = `translateX(${currentTranslate}%)`;
+        updateCarousel();
+    }, { passive: true });
+    prevButton.addEventListener('click', () => {
+        if (isAnimating || currentIndex <= 0) return;
+        currentIndex--;
+        updateCarousel();
+    });
+    nextButton.addEventListener('click', () => {
+        if (isAnimating || currentIndex >= maxIndex) return;
+        currentIndex++;
+        updateCarousel();
+    });
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            if (isAnimating || currentIndex === index) return;
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            updateSlidesPerView();
+        }, 250);
+    });
+    updateSlidesPerView();
+    dots[0].classList.add('bg-[var(--accent-primary)]');
+    const contactForm = document.getElementById('contact-form');
+    const customAlert = document.getElementById('custom-alert');
+    const closeAlertBtn = document.getElementById('close-alert-btn');
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        customAlert.classList.remove('modal-hidden');
+    });
+    function closeModal() {
+        customAlert.classList.add('modal-hidden');
+    }
+    closeAlertBtn.addEventListener('click', closeModal);
+    customAlert.addEventListener('click', function(event) {
+        if (event.target === customAlert) {
+            closeModal();
+        }
+    });
+</script>
 </body>
 </html>
-
