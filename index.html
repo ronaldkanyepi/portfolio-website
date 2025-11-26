@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronald Kanyepi - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -326,6 +327,48 @@
             font-weight: 500;
             text-align: center;
         }
+
+        /* Animation Styles */
+        .timeline-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .timeline-item.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item .card-base {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .timeline-item:hover .card-base {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+        }
+
+        .timeline-dot {
+            transition: box-shadow 0.3s ease;
+        }
+
+        .timeline-item:hover .timeline-dot {
+            box-shadow: 0 0 0 4px hsl(var(--primary) / 0.3);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .timeline-item {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+
+            .timeline-item:hover .card-base {
+                transform: none;
+            }
+        }
     </style>
 </head>
 
@@ -349,7 +392,6 @@
                         class="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl group-hover:rotate-3 transition-transform">
                         RK
                     </div>
-                    <span class="font-bold text-lg tracking-tight hidden sm:block">Ronald Kanyepi</span>
                 </a>
 
                 <nav class="hidden md:flex space-x-8 items-center">
@@ -426,9 +468,7 @@
                 </div>
 
                 <h1 class="text-4xl md:text-6xl font-bold tracking-tighter mb-4 text-foreground">
-                    Hi, I'm <span
-                        class="bg-clip-text text-transparent bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500">Ronald
-                        Kanyepi</span>
+                    Hi, I'm <span class="text-foreground">Ronald Kanyepi</span>
                 </h1>
 
                 <p class="text-xl md:text-2xl font-medium mb-6 text-muted-foreground h-8">
@@ -458,25 +498,71 @@
                     <h2 class="text-3xl font-bold tracking-tight text-foreground">About Me</h2>
                     <div class="w-16 h-1 bg-primary mx-auto mt-4 rounded-full opacity-80"></div>
                 </div>
-                <div class="max-w-3xl mx-auto text-left text-muted-foreground space-y-6 text-lg leading-relaxed">
-                    <p>
-                        Hello! I'm <strong class="text-foreground font-semibold">Ronald Nyasha Kanyepi</strong>, a
-                        passionate data enthusiast and business analytics professional dedicated to turning complex data
-                        into actionable insights. With a background in banking and advanced training through my Master's
-                        in Business Analytics, I specialize in bridging the gap between raw data and strategic
-                        decision-making.
-                    </p>
-                    <p>
-                        I thrive on solving challenging problems using data engineering, predictive modeling, and
-                        storytelling with data. Whether it's building scalable data pipelines, forecasting trends, or
-                        crafting dashboards, I bring curiosity and precision to every project.
-                    </p>
-                    <p>
-                        Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and
-                        techniques to sharpen my skills. When I'm not diving into datasets, you can find me following
-                        the latest in soccer or enjoying nature walks. Welcome to my corner of the web! Feel free to
-                        explore my projects, connect, or say hello!
-                    </p>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Column 1: Bio -->
+                    <div class="text-left text-muted-foreground space-y-6 text-lg leading-relaxed">
+                        <p>
+                            Hello! I'm <strong class="text-foreground font-semibold">Ronald Nyasha Kanyepi</strong>, a
+                            passionate data enthusiast and business analytics professional dedicated to turning complex
+                            data
+                            into actionable insights. With a background in banking and advanced training through my
+                            Master's
+                            in Business Analytics, I specialize in bridging the gap between raw data and strategic
+                            decision-making.
+                        </p>
+                        <p>
+                            I thrive on solving challenging problems using data engineering, predictive modeling, and
+                            storytelling with data. Whether it's building scalable data pipelines, forecasting trends,
+                            or
+                            crafting dashboards, I bring curiosity and precision to every project.
+                        </p>
+                        <p>
+                            Beyond numbers and models, I'm a lifelong learner who's always exploring new tools and
+                            techniques to sharpen my skills. When I'm not diving into datasets, you can find me
+                            following
+                            the latest in soccer or enjoying nature walks.
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Highlights Grid -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="card-base p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+                                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-bold text-foreground mb-1">Education</h3>
+                            <p class="text-sm text-muted-foreground">MSBA @ Emory</p>
+                        </div>
+                        <div
+                            class="card-base p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+                                <i data-lucide="briefcase" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-bold text-foreground mb-1">Experience</h3>
+                            <p class="text-sm text-muted-foreground">4+ Years Data Exp</p>
+                        </div>
+                        <div
+                            class="card-base p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+                                <i data-lucide="code" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-bold text-foreground mb-1">Tech Stack</h3>
+                            <p class="text-sm text-muted-foreground">Python, SQL, ML</p>
+                        </div>
+                        <div
+                            class="card-base p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+                                <i data-lucide="heart" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-bold text-foreground mb-1">Interests</h3>
+                            <p class="text-sm text-muted-foreground">Soccer & Nature</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -496,7 +582,7 @@
                                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
                                     <h3 class="text-lg font-bold text-foreground">Data Scientist</h3>
                                     <span
-                                        class="text-sm font-medium text-muted-foreground bg-secondary px-2 py-1 rounded">Dec
+                                        class="text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-full">Dec
                                         2024 - Present</span>
                                 </div>
                                 <p class="text-primary font-medium mb-4">Pennybacker Capital, Austin, Texas</p>
@@ -517,7 +603,7 @@
                                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
                                     <h3 class="text-lg font-bold text-foreground">Senior Data Specialist</h3>
                                     <span
-                                        class="text-sm font-medium text-muted-foreground bg-secondary px-2 py-1 rounded">Mar
+                                        class="text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-full">Mar
                                         2024 - Jun 2024</span>
                                 </div>
                                 <p class="text-primary font-medium mb-4">AFC Commercial Bank, Harare, Zimbabwe</p>
@@ -537,7 +623,7 @@
                                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
                                     <h3 class="text-lg font-bold text-foreground">Data Specialist</h3>
                                     <span
-                                        class="text-sm font-medium text-muted-foreground bg-secondary px-2 py-1 rounded">June
+                                        class="text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-full">June
                                         2022 - Feb 2024</span>
                                 </div>
                                 <p class="text-primary font-medium mb-4">AFC Commercial Bank, Harare, Zimbabwe</p>
@@ -570,7 +656,7 @@
                                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
                                     <h3 class="text-lg font-bold text-foreground">MSc. in Business Analytics (MSBA)</h3>
                                     <span
-                                        class="text-sm font-medium text-muted-foreground bg-secondary px-2 py-1 rounded">Aug
+                                        class="text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-full">Aug
                                         2024 - May 2025</span>
                                 </div>
                                 <p class="text-primary font-medium">Emory University – Goizueta Business School</p>
@@ -584,7 +670,7 @@
                                     <h3 class="text-lg font-bold text-foreground">BSc. in Business Studies & Computing
                                         Science</h3>
                                     <span
-                                        class="text-sm font-medium text-muted-foreground bg-secondary px-2 py-1 rounded">Feb
+                                        class="text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-full">Feb
                                         2017 - May 2021</span>
                                 </div>
                                 <p class="text-primary font-medium">University of Zimbabwe</p>
@@ -1413,6 +1499,14 @@
 
         let currentIndex = 0;
 
+        // Add click events to dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+
         function getSlidesPerView() {
             if (window.innerWidth < 640) return 1;
             if (window.innerWidth < 1024) return 2;
@@ -1421,7 +1515,7 @@
 
         function updateCarousel() {
             const slidesPerView = getSlidesPerView();
-            const totalSlides = 4;
+            const totalSlides = document.querySelectorAll('.skill-slide').length;
             const maxIndex = Math.max(0, totalSlides - slidesPerView);
 
             if (currentIndex > maxIndex) currentIndex = maxIndex;
@@ -1442,7 +1536,8 @@
         }
 
         nextButton.addEventListener('click', () => {
-            const maxIndex = Math.max(0, 4 - getSlidesPerView());
+            const totalSlides = document.querySelectorAll('.skill-slide').length;
+            const maxIndex = Math.max(0, totalSlides - getSlidesPerView());
             if (currentIndex < maxIndex) {
                 currentIndex++;
                 updateCarousel();
@@ -1458,8 +1553,40 @@
 
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
-        dots[0].classList.remove('bg-muted-foreground');
-        dots[0].classList.add('bg-primary');
+        // Initial active state set by updateCarousel, but ensuring first dot is active initially if needed
+        // The updateCarousel call above handles it.
+
+        // Touch support for mobile swipe
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        skillsTrack.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        skillsTrack.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            if (touchStartX - touchEndX > swipeThreshold) {
+                // Swipe Left - Next Slide
+                const maxIndex = Math.max(0, 4 - getSlidesPerView());
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            }
+            if (touchEndX - touchStartX > swipeThreshold) {
+                // Swipe Right - Prev Slide
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            }
+        }
 
 
         const contactForm = document.getElementById('contact-form');
@@ -1487,6 +1614,29 @@
         closeAlertBtn.addEventListener('click', closeAlert);
         customAlert.addEventListener('click', function (e) {
             if (e.target === customAlert) closeAlert();
+        });
+
+        // Intersection Observer for Timeline Animations
+        const timelineObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const timelineObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Stagger delay based on index within the current batch of entries
+                    setTimeout(() => {
+                        entry.target.classList.add('is-visible');
+                    }, index * 150); // 150ms delay between items
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, timelineObserverOptions);
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            timelineObserver.observe(item);
         });
 
     </script>
