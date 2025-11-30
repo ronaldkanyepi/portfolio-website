@@ -13,6 +13,14 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Check for saved theme preference or default to dark
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage))) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 
     <script>
         tailwind.config = {
@@ -903,7 +911,7 @@
     <main class="pt-20">
 
         <section id="hero"
-            class="relative min-h-screen flex items-start md:items-center justify-center pt-4 md:pt-20 overflow-hidden grid-bg">
+            class="relative min-h-screen flex items-start md:items-center justify-center pt-4 md:pt-20 overflow-hidden grid-bg mb-12">
 
             <canvas id="bg-canvas" class="absolute inset-0 w-full h-full z-0 opacity-40"></canvas>
 
