@@ -1612,6 +1612,52 @@
                         <div class="relative h-32 overflow-hidden bg-muted">
                             <div
                                 class="absolute inset-0 bg-black/50 z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                                <a href="https://insightbox-dev.vercel.app/" target="_blank"
+                                    class="inline-flex items-center justify-center px-3 py-1.5 rounded text-xs font-medium bg-red-500 text-white hover:bg-red-600 transition-colors">
+                                    <i data-lucide="play-circle" class="w-3 h-3 mr-2"></i>Demo
+                                </a>
+                            </div>
+                            <img src="media/the_analyst.png"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                alt="InsightBox"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                            <div
+                                class="w-full h-full hidden flex-col justify-center items-center text-muted-foreground">
+                                <i data-lucide="image-off" class="w-8 h-8 mb-2 opacity-50"></i>
+                                <span class="text-[10px]">Preview Unavailable</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-xs font-medium text-primary uppercase tracking-wider">Browser
+                                        Analytics</span>
+                                    <h3 class="text-xl font-bold text-foreground mt-1">InsightBox</h3>
+                                </div>
+                            </div>
+                            <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
+                                A serverless, privacy-first analytics platform powered by DuckDB and WASM. Features
+                                zero-latency in-browser processing, AI-driven Text-to-SQL generation, and instant
+                                visualization for CSV/Parquet files.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">DuckDB
+                                    WASM</span>
+                                <span
+                                    class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">Next.js</span>
+                                <span
+                                    class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">Privacy-First</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card group rounded-xl overflow-hidden bg-card/40 backdrop-blur-sm border border-white/10 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(var(--primary),0.15)] hover:-translate-y-1 transition-all duration-500"
+                        data-categories="data-science">
+                        <div class="relative h-32 overflow-hidden bg-muted">
+                            <div
+                                class="absolute inset-0 bg-black/50 z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                                 <a href="https://github.com/ronaldkanyepi/QueryCraft-AI" target="_blank"
                                     class="inline-flex items-center justify-center px-3 py-1.5 rounded text-xs font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors">
                                     <i data-lucide="github" class="w-3 h-3 mr-2"></i>Code
@@ -1628,16 +1674,16 @@
                             </div>
                         </div>
                         <div class="p-4">
-                            <div class="flex justify-between items-start mb-2">
+                            <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <span class="text-[10px] font-medium text-primary uppercase tracking-wider">AI
+                                    <span class="text-xs font-medium text-primary uppercase tracking-wider">AI
                                         Agent</span>
-                                    <h3 class="text-base font-bold text-foreground mt-0.5">QueryCraft AI</h3>
+                                    <h3 class="text-xl font-bold text-foreground mt-1">QueryCraft AI</h3>
                                 </div>
                             </div>
-                            <p class="text-muted-foreground text-xs mb-4 line-clamp-2">
-                                An AI assistant that turns natural language into SQL, validates and executes queries,
-                                and returns results using LangGraph and MCP for multi-step reasoning.
+                            <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
+                                AI assistant that converts natural language to SQL, validates execution, and delivers
+                                results using LangGraph and MCP for complex multi-step reasoning.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -1646,50 +1692,6 @@
                                     class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">LangGraph</span>
                                 <span
                                     class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">PostgreSQL</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card group rounded-xl overflow-hidden bg-card/40 backdrop-blur-sm border border-white/10 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(var(--primary),0.15)] hover:-translate-y-1 transition-all duration-500"
-                        data-categories="data-science">
-                        <div class="relative h-32 overflow-hidden bg-muted">
-                            <div
-                                class="absolute inset-0 bg-black/50 z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                <a href="https://github.com/ronaldkanyepi/the-analyst-agent" target="_blank"
-                                    class="inline-flex items-center justify-center px-3 py-1.5 rounded text-xs font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors">
-                                    <i data-lucide="github" class="w-3 h-3 mr-2"></i>Code
-                                </a>
-                            </div>
-                            <img src="media/the_analyst.png"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                alt="The Analyst"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-                            <div
-                                class="w-full h-full hidden flex-col justify-center items-center text-muted-foreground">
-                                <i data-lucide="image-off" class="w-8 h-8 mb-2 opacity-50"></i>
-                                <span class="text-[10px]">Preview Unavailable</span>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <span class="text-xs font-medium text-primary uppercase tracking-wider">RAG
-                                        System</span>
-                                    <h3 class="text-xl font-bold text-foreground mt-1">The Analyst</h3>
-                                </div>
-                            </div>
-                            <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
-                                An AI assistant that turns natural language into SQL, runs the query, and explains the
-                                results using a custom RAG system powered by ChromaDB.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">LangGraph</span>
-                                <span
-                                    class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">ChromaDB</span>
-                                <span
-                                    class="px-2 py-1 rounded text-[10px] font-medium border border-border bg-muted/50 text-muted-foreground">Chainlit</span>
                             </div>
                         </div>
                     </div>
@@ -1719,7 +1721,7 @@
                                 <span class="text-[10px]">Preview Unavailable</span>
                             </div>
                         </div>
-                        <div class="p-3">
+                        <div class="p-4">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
                                     <span class="text-xs font-medium text-primary uppercase tracking-wider">Personal
@@ -1728,8 +1730,8 @@
                                 </div>
                             </div>
                             <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
-                                A warm and helpful personal AI assistant for my resume and portfolio that answers
-                                questions based on a curated knowledge base using RAG.
+                                Personal AI assistant for my portfolio, answering questions from a curated knowledge
+                                base using RAG to provide instant, accurate responses.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -1766,7 +1768,7 @@
                                 <span class="text-xs">Preview Unavailable</span>
                             </div>
                         </div>
-                        <div class="p-3">
+                        <div class="p-4">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
                                     <span class="text-xs font-medium text-primary uppercase tracking-wider">Computer
@@ -1775,8 +1777,8 @@
                                 </div>
                             </div>
                             <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
-                                Extract text from scanned documents and images (licenses, passports) with OCR and
-                                convert results into structured JSON using internvl3-14b.
+                                Extracts text from scanned documents (licenses, passports) via OCR and converts it into
+                                structured JSON using the internvl3-14b model.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -1810,16 +1812,16 @@
                                 <span class="text-[10px]">Preview Unavailable</span>
                             </div>
                         </div>
-                        <div class="p-3">
-                            <div class="flex justify-between items-start mb-2">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <span class="text-[10px] font-medium text-primary uppercase tracking-wider">Data
+                                    <span class="text-xs font-medium text-primary uppercase tracking-wider">Data
                                         Engineering</span>
-                                    <h3 class="text-base font-bold text-foreground mt-0.5">Real-time Log Analysis</h3>
+                                    <h3 class="text-xl font-bold text-foreground mt-1">Real-time Log Analysis</h3>
                                 </div>
                             </div>
-                            <p class="text-muted-foreground text-xs mb-4 line-clamp-2">
-                                Scalable architecture for real-time log processing (60k events/sec). Built with
+                            <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
+                                Scalable real-time log processing architecture handling 60k events/sec, built with a
                                 Kafka-Spark ETL pipeline, DynamoDB, and Python Dash.
                             </p>
                             <div class="flex flex-wrap gap-2">
@@ -1854,17 +1856,17 @@
                                 <span class="text-[10px]">Preview Unavailable</span>
                             </div>
                         </div>
-                        <div class="p-3">
-                            <div class="flex justify-between items-start mb-2">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <span
-                                        class="text-[10px] font-medium text-primary uppercase tracking-wider">Predictive
+                                    <span class="text-xs font-medium text-primary uppercase tracking-wider">Predictive
                                         Analytics</span>
+                                    <h3 class="text-xl font-bold text-foreground mt-1">Customer Churn</h3>
                                 </div>
                             </div>
                             <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
-                                End-to-end churn prediction pipeline using statistical/ML models to help telecom
-                                companies identify at-risk customers.
+                                End-to-end churn prediction pipeline using ML models to identify at-risk telecom
+                                customers and reduce attrition.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -1899,7 +1901,7 @@
                                 <span class="text-xs">Preview Unavailable</span>
                             </div>
                         </div>
-                        <div class="p-3">
+                        <div class="p-4">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
                                     <span class="text-xs font-medium text-primary uppercase tracking-wider">Data
@@ -1908,8 +1910,8 @@
                                 </div>
                             </div>
                             <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
-                                Visualizing Health Trends in Southern Africa using World Bank data (2013–2020) to
-                                uncover patterns in life expectancy and mortality.
+                                Visualizes Southern African health trends (2013–2020) using World Bank data to uncover
+                                key patterns in life expectancy and mortality.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -1941,7 +1943,7 @@
                                 <span class="text-xs">Preview Unavailable</span>
                             </div>
                         </div>
-                        <div class="p-3">
+                        <div class="p-4">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
                                     <span
@@ -1950,8 +1952,8 @@
                                 </div>
                             </div>
                             <p class="text-muted-foreground text-sm mb-6 line-clamp-3">
-                                Modernized monolithic reconciliation app into microservices using Docker and Kubernetes
-                                at AFC Commercial Bank.
+                                Transformed a monolithic reconciliation app into scalable microservices using Docker and
+                                Kubernetes at AFC Commercial Bank.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
